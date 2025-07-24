@@ -1,12 +1,15 @@
-## Access Requirements
 
 This application requires a **computer** to run the backend server and a modern **web browser** to access it.
 
 Supported browsers:  
-[![Chrome](./path/to/chrome.png)](https://www.google.com/chrome/) 
-[![Firefox](./path/to/firefox.png)](https://www.mozilla.org/firefox/) 
-[![Edge](./path/to/edge.png)](https://www.microsoft.com/edge) 
-[![Safari](./path/to/safari.png)](https://www.apple.com/safari/)
+
+<p style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="50" style="margin-right: 2px;" />
+  <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="50" style="margin-right: 2px;" />
+  <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="50" style="margin-right: 2px;" />
+     <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="50" />
+</p>
+
 
 Backend runtime environment:  
 [![](https://skillicons.dev/icons?i=nodejs,express&perline=2)](https://skillicons.dev)
