@@ -3,16 +3,19 @@ This application requires a **computer** to run the backend server and a modern 
 
 Supported browsers:  
 
-<p style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="50" style="margin-right: 2px;" />
-  <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="50" style="margin-right: 2px;" />
-  <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="50" style="margin-right: 2px;" />
-     <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="50" />
-</p>
+<div text-align: justify;>
+  <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="80" style="margin: 2.5px;" />
+  <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="80" style="margin: 2.5px;" />
+  <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="80" style="margin: 2.5px;" />
+     <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="80" style="margin: 2.5px;" />
+</div>
 
 
 Backend runtime environment:  
-[![](https://skillicons.dev/icons?i=nodejs,express&perline=2)](https://skillicons.dev)
+<div text-align: justify;>
+  <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/Node.js.svg" alt="Node Icon" width="80" style="margin: 2.5px;" />
+  <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/ExpressLogo.PNG" alt="Express Icon" width="100" style="margin: 2.5px;" />
+</div>
 
 To run the app locally:
 
