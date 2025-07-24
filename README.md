@@ -1,8 +1,8 @@
-# Travlr Getaways — Module 1: Static Website
+<h1 style="text-align: center;">Travlr Getaways</h1>
 
 <img src="images/logo.png" alt="Travlr Getaways Logo" width="300">
 
-# Travlr Getaways — Module 1: Static Website
+
 
 <!-- Skill Badges Only -->
 ![Static Website](https://img.shields.io/badge/Website-Static-blue?style=for-the-badge)
