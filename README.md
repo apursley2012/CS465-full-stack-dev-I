@@ -19,6 +19,7 @@
   <a href="#prerequisites"><strong>Quick Start »</strong></a>
     &nbsp;&middot;&nbsp;
     <a href="https://github.com/apursley2012/CS465-full-stack-dev-I/issues/new">Report Issue »</a>
+    &nbsp;&middot;&nbsp;
     <a href="https://github.com/github_username/repo_name">View Demo</a>
   </p>
   </div>
