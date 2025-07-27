@@ -1,32 +1,16 @@
 <a id="readme-top"></a>
 
   <div align="center">
-      <h1> Travlr Getaways </h1>
-      <h3><em> Module 3: Static HTML to Templates with JSON </em></h3>
-  </div>
+	  <img src="public/images/upscaledlogo.png" alt="Travlr Getaways Logo" width="100%">
+	  <h1> Travlr Getaways </h1>
+	  <h3><em> Module 3: Static HTML to Templates with JSON </em></h3>
+	  <h4><a href="#page-previews">Page Previews</a>
+		  <span> · </span>
+		  <a href="#prerequisites">Quick Start</a>
+<span> · </span>
+		  <a href="https://github.com/apursley2012/CS465-full-stack-dev-I/issues">Report Bug</a></h4>
+      </div>
 
----
-
-  <img src="public/images/upscaledlogo.png" alt="Travlr Getaways Logo" width="100%">
-
----
-
-## Project Overview 
-
-<div align="center">
-  <p align="center"> Module 3 enhances the Travlr Getaways website by converting it into a dynamic Express.js application. It uses Handlebars templates and external JSON data files to generate content dynamically, allowing easier content management and maintainability. This project demonstrates server-side rendering, modular MVC architecture, and the use of JSON for data-driven web pages.
-  </p>
-  <a href="#prerequisites"><strong>Quick Start »</strong></a>
-    &nbsp;&middot;&nbsp;
-     <a href="#page-previews"><strong> Page Previews »</strong></a>
-    &nbsp;&middot;&nbsp;
-    <br>
-	<a href="https://github.com/apursley2012/CS465-full-stack-dev-I/issues/new"><strong> Report Issue »</strong></a>
-    
-   
-  </p>
-  </div>
-  
 ---
 
 ## Table of Contents
@@ -135,45 +119,46 @@ A modern browser like Chrome, Firefox, Edge, or Safari to view the site.
 Click a browser icon below to be taken to the download page for that browser. </p>
 
 ---
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://www.google.com/chrome/" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="60px">
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.mozilla.org/firefox/" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="60px">
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.microsoft.com/edge" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="60px">
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.apple.com/safari/" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="60px">
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://www.google.com/chrome/" target="_blank">Chrome</a>
-    </td>
-    <td align="center">
-      <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a>
-    </td>
-    <td align="center">
-      <a href="https://www.microsoft.com/edge" target="_blank">Edge</a>
-    </td>
-    <td align="center">
-      <a href="https://www.apple.com/safari/" target="_blank">Safari</a>
-    </td>
-  </tr>
-</table>
+<div align="center">
+	<table>
+	  <tr>
+	    <td align="center">
+	      <a href="https://www.google.com/chrome/" target="_blank">
+	        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="60px">
+	      </a>
+	    </td>
+	    <td align="center">
+	      <a href="https://www.mozilla.org/firefox/" target="_blank">
+	        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="60px">
+	      </a>
+	    </td>
+	    <td align="center">
+	      <a href="https://www.microsoft.com/edge" target="_blank">
+	        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="60px">
+	      </a>
+	    </td>
+	    <td align="center">
+	      <a href="https://www.apple.com/safari/" target="_blank">
+	        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="60px">
+	      </a>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td align="center">
+	      <a href="https://www.google.com/chrome/" target="_blank">Chrome</a>
+	    </td>
+	    <td align="center">
+	      <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a>
+	    </td>
+	    <td align="center">
+	      <a href="https://www.microsoft.com/edge" target="_blank">Edge</a>
+	    </td>
+	    <td align="center">
+	      <a href="https://www.apple.com/safari/" target="_blank">Safari</a>
+	    </td>
+	  </tr>
+	</table>
+ </div>
 
 ---
 
