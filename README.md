@@ -20,7 +20,7 @@
     &nbsp;&middot;&nbsp;
     <a href="https://github.com/apursley2012/CS465-full-stack-dev-I/issues/new">Report Issue »</a>
     &nbsp;&middot;&nbsp;
-    <a href="file:///C:/Users/alysh/OneDrive%20-%20SNHU/GitHub/apursley2012/CS465-full-stack-dev-I/tree/module3/travlr/public/about.html">View Demo</a>
+    <a href="https://github.com/github_username/repo_name">View Demo »</a>
   </p>
   </div>
   
@@ -28,33 +28,51 @@
 
 ## Table of Contents
 
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Project Preview](#project-preview)
 - [Prerequisites](#prerequisites)
 - [Installation & Setup](#installation--setup)
 - [Usage](#usage)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
 - [File Structure](#file-structure)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 - [FAQs](#faqs)
 
 ---
----
 
-## Table of Contents
+## About The Project
 
-- [Prerequisites](#prerequisites)  
-- [Installation](#installation)  
-- [Running the Application](#running-the-application)  
-- [Project Structure](#project-structure)  
-- [Features](#features)  
-- [Tech Stack](#tech-stack)  
-- [Contributing](#contributing)  
-- [Acknowledgements](#acknowledgements)  
-- [FAQ](#faq)  
-- [Contact](#contact)  
+Travlr Getaways Module 3 focuses on transforming static HTML pages into dynamic templates using Handlebars and JSON data. This approach replaces repetitive static HTML code with reusable templates, making the site easier to maintain and update.
 
----
+The primary goal of this module was to convert the previously static Travel page into a dynamic Handlebars template that reads trip data from a JSON file. This reduces code duplication and enables the website to dynamically render trip information based on external data. 
+
+## Features
+- **Dynamic Web Pages:** All key pages (Travel, Meals, Rooms, News, About, Contact, Home) are rendered dynamically using Handlebars templates, providing a flexible and scalable site experience.
+- **Content Management via JSON:** Page content is stored and managed in external JSON files, enabling easy content updates without changing code or templates.
+- **Consistent Navigation:** The site features a reusable header and footer partial that ensures consistent navigation menus and branding across all pages.
+- **Image and Media Integration:** Each page displays images associated with content (e.g., meals photos, room photos) pulled dynamically from JSON data.Clean URL Routing: Express routes handle requests and render the appropriate page templates seamlessly with user-friendly URLs.
+- **Modular Codebase:** Separation of concerns with dedicated controllers, routes, views, and data files to simplify maintenance and future development.
+- **Scalable Design:** The architecture supports adding new pages or modifying existing ones with minimal effort, thanks to JSON-driven data and templates.
+- **Improved User Experience:** Dynamic rendering ensures fast page loads and easy content management for a better end-user experience.
+- **Foundation for API or Database Integration:** The design prepares the app for potential backend enhancements like databases or APIs by centralizing data management.
+- **Easy Content Updates:** Non-technical users can update site content by editing JSON files without touching the site’s codebase.
+
+
+
+This module significantly enhances the maintainability and scalability of the Travlr Getaways website by shifting static content management towards a more flexible, data-driven design pattern.
+
+By completing this module, you gain practical experience in:
+
+- Working with Handlebars templating engine in an Express.js environment.
+- Managing JSON data files and integrating them with server-side JavaScript.
+- Developing clean, modular web applications using MVC design patterns.
+- Preparing for future enhancements involving databases and dynamic data storage.
+
+This project builds on the knowledge gained in previous modules and sets the foundation for further backend and database integration in upcoming modules.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ### Prerequisites
 
