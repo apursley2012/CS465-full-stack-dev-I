@@ -126,9 +126,56 @@ This module significantly enhances the maintainability and scalability of the Tr
 
 # Prerequisites
 
-Before you can run this project locally, you need to have the following software and tools installed on your computer. 
-
 This guide provides instructions specifically for setting up and preparing to use Visual Studio Code (VS Code) to run the repo locally.
+
+## Web Browser
+
+A modern browser like Chrome, Firefox, Edge, or Safari to view the site.
+
+Click a browser icon below to be taken to the download page for that browser. </p>
+
+---
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.google.com/chrome/" target="_blank">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="60px">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.mozilla.org/firefox/" target="_blank">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="60px">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.microsoft.com/edge" target="_blank">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="60px">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.apple.com/safari/" target="_blank">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="60px">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://www.google.com/chrome/" target="_blank">Chrome</a>
+    </td>
+    <td align="center">
+      <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a>
+    </td>
+    <td align="center">
+      <a href="https://www.microsoft.com/edge" target="_blank">Edge</a>
+    </td>
+    <td align="center">
+      <a href="https://www.apple.com/safari/" target="_blank">Safari</a>
+    </td>
+  </tr>
+</table>
+
+---
 
 ## Visual Studio (VS) Code:
 
@@ -354,74 +401,6 @@ module3/
     ├── app.js
     ├── package.json
 ```
-
----
-
-## Table of Contents
-
-- [Prerequisites](#prerequisites)  
-- [Installation](#installation)  
-- [Running the Application](#running-the-application)  
-- [Project Structure](#project-structure)  
-- [Features](#features)  
-- [Tech Stack](#tech-stack)  
-- [Contributing](#contributing)  
-- [Acknowledgements](#acknowledgements)  
-- [FAQ](#faq)  
-- [Contact](#contact)  
-
----
-
-## Prerequisites
-
-Before installing and running this project, ensure the following are installed and accessible:
-
-### 1. Git
-
-Git is required to clone the repository and manage version control.
-
-- Download: [https://git-scm.com/downloads](https://git-scm.com/downloads)  
-- Install with default settings.  
-
-**Verify installation:**  
-Open a terminal or Command Prompt and run:
-
-```bash
-git --version
-```
-You should see a version number like git version 2.x.x.
-
-⸻
-
-2. Node.js and npm
-
-Node.js is the runtime environment; npm is the Node package manager.
-	•	Download LTS version (recommended): https://nodejs.org/en/download/
-	•	Install by following the installer prompts.
-
-Verify installation:
-In terminal or Command Prompt, run:
-
-node --version
-npm --version
-
-You should see version numbers for both commands, e.g., v18.x.x and 9.x.x.
-
-⸻
-
-3. Web Browser
-
-A modern browser like Chrome, Firefox, Edge, or Safari to view the site.
-
-<p style="text-align: center; font-style: italic; font-size: 14px; color: #555;">
-  Click a browser icon below to be taken to the download page for that browser. </p>
-
-<div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 10px;">
-  <a href="https://www.google.com/chrome/" target="_blank" style="text-align: center; text-decoration: none;"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="80" style="margin: 2.5px;" /></a>
-  <a href="https://www.mozilla.org/firefox/" target="_blank" style="text-align: center; text-decoration: none;"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="80" style="margin: 2.5px;" /></a>
-  <a href="https://www.microsoft.com/edge" target="_blank" style="text-align: center; text-decoration: none;"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="80" style="margin: 2.5px;" /></a>
-  <a href="https://www.apple.com/safari/" target="_blank" style="text-align: center; text-decoration: none;"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="80" style="margin: 2.5px;" /></a>
-</div>
 
 ---
 
