@@ -34,6 +34,7 @@
 - [About the Project](#about-the-project)
 - [Features](#features)
 - [Page Previews](#page-previews)
+- [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
 - [Installation & Setup](#installation--setup)
 - [Usage](#usage)
@@ -112,6 +113,176 @@ This module significantly enhances the maintainability and scalability of the Tr
 </div>
 
 ---
+
+## Tech Stack
+
+- **Node.js** – JavaScript runtime environment used to run the backend server and scripts.
+- **Express.js** – Minimal and flexible Node.js web application framework for building the server and handling routing.
+- **Handlebars (express-handlebars)** – Templating engine for generating dynamic HTML pages using JSON data.
+- **JavaScript (ES6+)** – Core programming language for server logic and dynamic content.
+- **HTML5 & CSS3** – Structure and style for the rendered web pages.
+- **JSON** – Used for storing and loading trip data.
+- **Git** – Version control for managing code changes and collaboration.
+
+# Prerequisites
+
+Before you can run this project locally, you need to have the following software and tools installed on your computer. 
+
+This guide provides instructions specifically for setting up and preparing to use Visual Studio Code (VS Code) to run the repo locally.
+
+## Visual Studio (VS) Code:
+
+*Here's a step-by-step guide to installing Visual Studio Code (VS Code) on your computer, primarily for Windows, with noted differences for macOS and Linux:*  
+
+### Download the installer:
+- Open your web browser and go to the official Visual Studio Code website: [code.visualstudio.com](https://code.visualstudio.com).
+- Click on the "Download" button for your operating system (Windows, macOS, or Linux).
+- The installer file (e.g., `VSCodeUserSetup-x64-1.x.x.exe` for Windows) will begin downloading.  
+
+### Launch the installer:
+- Once the download is complete, locate the installer file in your Downloads folder.
+- Double-click the installer file to launch the installation process.  
+
+### Follow the installation prompts:
+- ***Accept the License Agreement:*** Read and accept the license agreement, then click "Next".
+- ***Choose Installation Location:*** The default location is usually fine, but you can choose a different location if needed. Click "Next".
+- ***Start Menu Folder:*** Keep the default Start Menu folder name or change it as desired. Click "Next".
+    - **Additional Tasks:**
+      - On Windows, consider checking the boxes for creating a desktop icon and adding "Open with Code" to the right-click context menu (these are useful shortcuts).
+      - Ensure the "Add to PATH" option is checked (usually the default) as this allows you to launch VS Code from your terminal or command prompt.
+      - Click "Next".
+- ***Confirm Installation:*** Review your selections and click "Install".
+- The installation will proceed.
+- Click "Finish" to exit the installer and launch Visual Studio Code (by default).
+
+- **For macOS users:**  
+    - Download the macOS version.
+    - Open the downloaded `.dmg` file.
+    - Drag the Visual Studio Code.app to your Applications folder.
+    - Optionally add it to your Dock by right-clicking the icon and choosing "Options" → "Keep in Dock".
+
+- **For Linux users (Debian/Ubuntu):**        - Download the `.deb` package.
+    - Install it through your graphical software center or using the command line:
+     ```bash
+     sudo apt install ./<file>.deb
+     ```
+    - ***Note:*** The installer will prompt to add the apt repository for auto-updates.
+
+## Node.js and npm
+
+### Download the installer:
+- ***Go to the official [Nodejs.org](https://nodejs.org) website:***
+  - Click the **LTS** (Recommended For Most Users) download for your operating system.
+  - The installer file (e.g., `node-vxx.x.x-x64.msi` for Windows) will begin downloading.
+  - **macOS:** Download the `.pkg` file.
+  - **Linux/Ubuntu:** You can use your package manager instead (see next step).
+
+### Launch the installer:
+- Locate the installer in your **Downloads** folder.
+- Double-click the installer file to begin installation.
+- **macOS:** Double-click the `.pkg` file and follow the prompts.
+- **Linux/Ubuntu:** Open a terminal and run:
+     ```bash
+     sudo apt update
+     sudo apt install nodejs npm
+     ```
+### Follow the installation prompts:
+- Accept the license agreement and keep the default settings unless you want to change the install location.
+- Complete the install process.
+- **macOS:** Default options are fine; click through to finish.
+- **Linux/Ubuntu:** If using the package manager, no prompts will appear.
+
+### Verify the installation:
+- Open Command Prompt (Windows) or Terminal (macOS/Linux).
+   - Run:
+     ```bash
+     node -v
+     npm -v
+     ```
+- ***Both commands should display a version number if installation was successful***
+
+### 1. Install Node.js and npm
+
+- **Node.js** is the JavaScript runtime environment needed to run this project.
+- **npm** (Node Package Manager) is included with Node.js and is used to manage dependencies.
+
+### How to install:
+
+- Go to the official Node.js website: [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+- Download the **LTS (Long-Term Support)** version for your operating system.
+- Run the installer and follow the prompts.
+- After installation, verify the installation by opening a terminal or PowerShell and typing:
+
+    ```bash
+    node --version
+    npm --version
+    ```
+
+- You should see version numbers printed for both commands.
+
+---
+
+## 2. Install Git
+
+- Git is required to clone the repository and manage version control.
+
+### How to install:
+
+- Download Git from: [https://git-scm.com/downloads](https://git-scm.com/downloads)
+- Run the installer with default options.
+- To verify installation, open your terminal or PowerShell and type:
+
+    ```bash
+    git --version
+    ```
+
+- You should see the Git version number.
+
+---
+
+## 3. Install Visual Studio Code (VS Code)
+
+- VS Code is a popular code editor with integrated terminal and Git support.
+
+### How to install:
+
+- Download VS Code from: [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
+- Install by following the installer instructions.
+- Once installed, launch VS Code.
+
+---
+
+## 4. Set Up VS Code for Node.js Development
+
+- Install the **Node.js Extension Pack** or **JavaScript/Node.js** related extensions for better development experience.
+- Use the integrated terminal in VS Code for running commands.
+
+---
+
+## 5. (Optional) Install GitHub Desktop or Other Git GUI Tools
+
+- If you prefer a graphical interface to manage Git repositories, GitHub Desktop is recommended.
+- Download from: [https://desktop.github.com/](https://desktop.github.com/)
+
+---
+
+## Summary
+
+To get started with this project locally, ensure you have:
+
+- Node.js (with npm)
+- Git
+- Visual Studio Code (VS Code)
+
+These tools will allow you to clone the repository, install dependencies, and run the project as detailed in the installation and usage sections.
+
+---
+
+### Notes:
+
+- While these instructions focus on using VS Code and command line, you can use other editors or terminals of your choice.
+- For beginners, VS Code provides an all-in-one interface that simplifies coding, Git, and terminal usage.
+
 
 ### Prerequisites
 
