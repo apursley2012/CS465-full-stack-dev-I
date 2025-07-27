@@ -18,9 +18,12 @@
   </p>
   <a href="#prerequisites"><strong>Quick Start »</strong></a>
     &nbsp;&middot;&nbsp;
-    <a href="https://github.com/apursley2012/CS465-full-stack-dev-I/issues/new">Report Issue »</a>
+     <a href="#page-previews"><strong> Page Previews »</strong></a>
     &nbsp;&middot;&nbsp;
-    <a href="https://github.com/github_username/repo_name">View Demo »</a>
+    <br>
+	<a href="https://github.com/apursley2012/CS465-full-stack-dev-I/issues/new"><strong> Report Issue »</strong></a>
+    
+   
   </p>
   </div>
   
@@ -30,7 +33,7 @@
 
 - [About the Project](#about-the-project)
 - [Features](#features)
-- [Project Preview](#project-preview)
+- [Page Previews](#page-previews)
 - [Prerequisites](#prerequisites)
 - [Installation & Setup](#installation--setup)
 - [Usage](#usage)
@@ -47,6 +50,10 @@ Travlr Getaways Module 3 focuses on transforming static HTML pages into dynamic 
 
 The primary goal of this module was to convert the previously static Travel page into a dynamic Handlebars template that reads trip data from a JSON file. This reduces code duplication and enables the website to dynamically render trip information based on external data. 
 
+This module significantly enhances the maintainability and scalability of the Travlr Getaways website by shifting static content management towards a more flexible, data-driven design pattern. This project builds on previous modules and sets the foundation for further backend and database integration.
+
+---
+
 ## Features
 - **Dynamic Web Pages:** All key pages (Travel, Meals, Rooms, News, About, Contact, Home) are rendered dynamically using Handlebars templates, providing a flexible and scalable site experience.
 - **Content Management via JSON:** Page content is stored and managed in external JSON files, enabling easy content updates without changing code or templates.
@@ -58,21 +65,53 @@ The primary goal of this module was to convert the previously static Travel page
 - **Foundation for API or Database Integration:** The design prepares the app for potential backend enhancements like databases or APIs by centralizing data management.
 - **Easy Content Updates:** Non-technical users can update site content by editing JSON files without touching the site’s codebase.
 
+---
 
+## Page Previews
 
-This module significantly enhances the maintainability and scalability of the Travlr Getaways website by shifting static content management towards a more flexible, data-driven design pattern.
+### Home Page
+<div align="center">
+  <img src="public/images/index1.png" alt="Home Page 1" width="100%" style="margin-bottom: 10px;" />
+  <img src="public/images/index2.png" alt="Home Page 2" width="100%" />
+</div>
 
-By completing this module, you gain practical experience in:
+### Travel Page
+<div>
+  <img src="public/images/travel1.png" alt="Travel Page 1" width="100%" style="margin-bottom: 10px;" />
+  <img src="public/images/travel2.png" alt="Travel Page 2" width="100%" />
+</div>
 
-- Working with Handlebars templating engine in an Express.js environment.
-- Managing JSON data files and integrating them with server-side JavaScript.
-- Developing clean, modular web applications using MVC design patterns.
-- Preparing for future enhancements involving databases and dynamic data storage.
+### Rooms Page
+<div>
+  <img src="public/images/rooms1.png" alt="Rooms Page 1" width="100%" style="margin-bottom: 10px;" />
+  <img src="public/images/rooms2.png" alt="Rooms Page 2" width="100%" />
+</div>
 
-This project builds on the knowledge gained in previous modules and sets the foundation for further backend and database integration in upcoming modules.
+### Meals Page
+<div>
+  <img src="public/images/meals1.png" alt="Meals Page 1" width="100%" style="margin-right: 10px;" />
+  <img src="public/images/meals2.png" alt="Meals Page 2" width="100%" />
+</div>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### News Page
+<div>
+  <img src="public/images/news1.png" alt="News Page 1" width="100%" style="margin-right: 10px;" />
+  <img src="public/images/news2.png" alt="News Page 2" width="100%" />
+</div>
 
+### About Page
+<div>
+  <img src="public/images/about1.png" alt="About Page 1" width="100%" style="margin-right: 10px;" />
+  <img src="public/images/about2.png" alt="About Page 2" width="100%" />
+</div>
+
+### Contact Page
+<div>
+  <img src="public/images/contact1.png" alt="Contact Page 1" width="100%" style="margin-right: 10px;" />
+  <img src="public/images/contact2.png" alt="Contact Page 2" width="100%" />
+</div>
+
+---
 
 ### Prerequisites
 
