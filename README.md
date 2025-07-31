@@ -144,22 +144,22 @@ Click a browser icon below to be taken to the download page for that browser. </
   <tr>
     <td align="center">
       <a href="https://www.google.com/chrome/" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="60px">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="80">
       </a>
     </td>
     <td align="center">
       <a href="https://www.mozilla.org/firefox/" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="60px">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="80">
       </a>
     </td>
     <td align="center">
       <a href="https://www.microsoft.com/edge" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="60px">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="80">
       </a>
     </td>
     <td align="center">
       <a href="https://www.apple.com/safari/" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="60px">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="80">
       </a>
     </td>
   </tr>
@@ -182,13 +182,15 @@ Click a browser icon below to be taken to the download page for that browser. </
 
 ---
 
-<div align="left" max-width=150px style="margin-left=30px; margin-right=30px; padding-left=30px; padding-right=30px;">
-<figure align="center" style="margin-left=30px; margin-right=30px; padding-left=30px; padding-right=30px;">
-	<a href="https://code.visualstudio.com">
-		<img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0771.png" width="60px" alt="VS Code Icon"></a>
-	<br><figcaption style="text-align: center";> Download Now <a href="https://code.visualstudio.com"></a>
-	</figcaption>
-</figure>
+<div>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<figure>
+		<a href="https://code.visualstudio.com"><img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0771.png" width="80" alt="VS Code Icon"></a></figure><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<figcaption>
+    <center>
+      <a href="https://code.visualstudio.com" target="_blank">
+        <em>Download Now</em>
+      </a>
+    </center>
+  </figcaption>
 </div>
 
 ---
@@ -233,10 +235,63 @@ Click a browser icon below to be taken to the download page for that browser. </
 
 ---
 
-## Contributing
+<div>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<figure>
+		<a href="https://code.visualstudio.com"><img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0771.png" width="80" alt="VS Code Icon"></a></figure><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<figcaption>
+    <center>
+      <a href="https://code.visualstudio.com" target="_blank">
+        <em>Download Now</em>
+      </a>
+    </center>
+  </figcaption>
+</div>
 
-Contributions are welcome! Please fork the repo, make your changes, and submit a pull request.
+## 3. Git:
 
+*Here's a step-by-step guide to installing Git on your computer, primarily for Windows, with noted differences for macOS and Linux:*  
+
+### Download the installer:
+- Open your web browser and go to the official Git website: [git-scm.com/downloads](https://git-scm.com/downloads).
+- The site will automatically detect your operating system.
+- Click the download link for **Windows**, **macOS**, or **Linux**.
+- The installer file (e.g., `Git-2.x.x-x64.exe` for Windows) will begin downloading.  
+
+### Launch the installer:
+- Once the download is complete, locate the installer file in your Downloads folder.
+- Double-click the installer file to begin the installation process.  
+
+### Follow the installation prompts:
+- ***Accept the License Agreement:*** Read and accept the license agreement, then click "Next".
+- ***Choose Installation Location:*** The default location is usually fine, but you can choose a different location if needed. Click "Next".
+- ***Select Components:*** Keep the default selections. Ensure “Git Bash Here” and “Git GUI Here” are checked.
+- ***Choosing Default Editor:*** Choose your preferred code editor or leave the default (Vim or Notepad). Click "Next".
+- ***Adjusting PATH Environment:*** Select “Git from the command line and also from 3rd-party software” (recommended). Click "Next".
+- ***Other Configuration Settings:*** Leave default options selected unless you have a reason to change them.
+- Click "Install" to begin installation.
+- Click "Finish" to exit the installer when setup is complete.
+
+- **For macOS users:**  
+    - Git is available through the Xcode Command Line Tools.
+    - Open the Terminal app and run:
+      ```bash
+      xcode-select --install
+      ```
+    - A popup window will appear. Click "Install" and wait for the installation to finish.
+
+- **For Linux users (Debian/Ubuntu):**  
+    - Open a terminal and run the following commands:
+      ```bash
+      sudo apt update
+      sudo apt install git
+      ```
+
+### Verify the installation:
+- Open your terminal (Command Prompt, PowerShell, Terminal, or Git Bash).
+- Type the following and press Enter:
+  ```bash
+  git --version
+  ```
+- If Git is installed correctly, you will see the version number displayed.
 ⸻
 
 Acknowledgements
