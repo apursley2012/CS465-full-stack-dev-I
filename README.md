@@ -131,7 +131,7 @@ This guide provides instructions specifically for setting up and preparing to us
 
 Before attempting to set up the project, ensure the following tools are installed on your system:
 
-## Web Browser
+## 1. Web Browser
 
 A modern browser like Chrome, Firefox, Edge, or Safari to view the site.
 
@@ -139,7 +139,7 @@ Click a browser icon below to be taken to the download page for that browser. </
 
 ---
 
-<div align="center">
+<div align="center" valign="middle">
 <table>
   <tr>
     <td align="center">
@@ -147,34 +147,34 @@ Click a browser icon below to be taken to the download page for that browser. </
         <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="80">
       </a>
     </td>
-    <td align="center">
+    <td align="center" valign="middle">
       <a href="https://www.mozilla.org/firefox/" target="_blank">
         <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="80">
       </a>
     </td>
-    <td align="center">
+    <td align="center" valign="middle">
       <a href="https://www.microsoft.com/edge" target="_blank">
         <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="80">
       </a>
     </td>
-    <td align="center">
+    <td align="center" valign="middle">
       <a href="https://www.apple.com/safari/" target="_blank">
         <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="80">
       </a>
     </td>
   </tr>
   <tr>
-    <td align="center">
-      <a href="https://www.google.com/chrome/" target="_blank">Chrome</a>
+    <td align="center" valign="top">
+      <em><strong><a href="https://www.google.com/chrome/" target="_blank">Download</a></strong></em><br>Google Chrome
     </td>
-    <td align="center">
-      <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a>
+    <td align="center" valign="top">
+	    <em><strong><a href="https://www.mozilla.org/firefox/" target="_blank">Download </a></strong></em><br> Mozilla Firefox
     </td>
-    <td align="center">
-      <a href="https://www.microsoft.com/edge" target="_blank">Edge</a>
+    <td align="center" valign="top">
+      <em><strong><a href="https://www.microsoft.com/edge" target="_blank">Download</a></strong></em><br>Microsoft Edge
     </td>
-    <td align="center">
-      <a href="https://www.apple.com/safari/" target="_blank">Safari</a>
+    <td align="center" valign="top">
+	    <em><strong><a href="https://www.apple.com/safari/" target="_blank">Download</a></strong></em><br>Apple Safari
     </td>
   </tr>
 </table>
@@ -182,20 +182,25 @@ Click a browser icon below to be taken to the download page for that browser. </
 
 ---
 
-<div>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<figure>
-		<a href="https://code.visualstudio.com"><img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0771.png" width="80" alt="VS Code Icon"></a></figure><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<figcaption>
-    <center>
-      <a href="https://code.visualstudio.com" target="_blank">
-        <em>Download Now</em>
-      </a>
-    </center>
-  </figcaption>
-</div>
+## 2. Visual Studio (VS) Code:
 
+<div align="center">
+	<table>
+		<tr>
+			<td align="center">
+				<a href="https://code.visualstudio.com" target="_blank"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module3/public/images/IMG_0771.png" alt="Visual Studio Code" width="80">
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" valign="top">
+				<strong><em><a href="https://code.visualstudio.com" target="_blank">Download</a></em></strong><br>Visual Studio Code
+			</td>
+		</tr>
+	</table>
+</div>
+	
 ---
-			
-## Visual Studio (VS) Code:
 
 *Here's a step-by-step guide to installing Visual Studio Code (VS Code) on your computer, primarily for Windows, with noted differences for macOS and Linux:*  
 
@@ -235,18 +240,93 @@ Click a browser icon below to be taken to the download page for that browser. </
 
 ---
 
-<div>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<figure>
-		<a href="https://code.visualstudio.com"><img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0771.png" width="80" alt="VS Code Icon"></a></figure><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<figcaption>
-    <center>
-      <a href="https://code.visualstudio.com" target="_blank">
-        <em>Download Now</em>
+## 3. Node.js and npm:
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://nodejs.org" target="_blank">
+        <img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0772.png" alt="Node.js Icon" width="80px">
       </a>
-    </center>
-  </figcaption>
+    </td>
+    <td align="center" valign="middle">
+      <a href="https://nodejs.org" target="_blank">
+        <img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0774.png" alt="NPM Icon" width="80px">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"  valign="middle">
+	    <strong><em><a href="https://nodejs.org" target="_blank">Download</a></em></strong> <br> Node.js & NPM
+    </td>
+  </tr>
+</table>
+</div>
+	
+---
+
+*Here's a step-by-step guide to installing Node.js (and npm, which is included) on your computer, primarily for Windows, with noted differences for macOS and Linux:*  
+
+### Download the installer:
+- Open your web browser and go to the official Node.js website: [nodejs.org](https://nodejs.org).
+- Click the **LTS (Recommended for Most Users)** download button for your operating system (Windows, macOS, or Linux).
+- The installer file (e.g., `node-vxx.x.x-x64.msi` for Windows) will begin downloading.  
+
+### Launch the installer:
+- Once the download is complete, locate the installer file in your Downloads folder.
+- Double-click the installer file to begin the installation process.  
+
+### Follow the installation prompts:
+- ***Welcome Screen:*** Click "Next".
+- ***License Agreement:*** Read and accept the license agreement, then click "Next".
+- ***Choose Installation Location:*** The default location is usually fine, but you can choose a different folder if desired. Click "Next".
+- ***Select Components:*** Leave the default components selected. Click "Next".
+- ***Tools for Native Modules:*** (Optional) You may be prompted to install additional tools like Python and Visual Studio Build Tools. You can skip this unless you plan to use native modules. Click "Next".
+- ***Ready to Install:*** Review your selections and click "Install".
+- When installation finishes, click "Finish" to exit the installer.
+
+- **For macOS users:**  
+    - Download the `.pkg` file from the Node.js website.
+    - Double-click it to launch the installer and follow the on-screen instructions.
+    - Once complete, Node.js and npm will be available system-wide.
+
+- **For Linux users (Debian/Ubuntu):**  
+    - Open a terminal and run the following commands:
+      ```bash
+      sudo apt update
+      sudo apt install nodejs npm
+      ```
+
+### Verify the installation:
+- Open your terminal (Command Prompt, PowerShell, or Terminal).
+- Run the following commands:
+  ```bash
+  node -v
+  npm -v
+  ```
+- If Node.js and npm are installed correctly, you will see version numbers for both.
+
+---
+
+## 4. Git:
+
+<div align="center">
+	<table>
+		<tr>
+			<td align="center" valign="middle">
+				<a href="https://code.visualstudio.com" target="_blank"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module3/public/images/IMG_0773.png" alt="Git" width="80"></a>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" valign="top">
+			<strong><em><a href="https://code.visualstudio.com" target="_blank">Download</a></em></strong><br>Git
+			</td>
+		</tr>
+	</table>
 </div>
 
-## 3. Git:
+--- 
 
 *Here's a step-by-step guide to installing Git on your computer, primarily for Windows, with noted differences for macOS and Linux:*  
 
@@ -292,7 +372,77 @@ Click a browser icon below to be taken to the download page for that browser. </
   git --version
   ```
 - If Git is installed correctly, you will see the version number displayed.
-⸻
+
+---
+
+## Running the Project Locally Using Visual Studio Code:
+
+*Here’s a step-by-step guide to running the project locally using Visual Studio Code after you’ve installed all required prerequisites:*  
+
+### Open the project folder in VS Code:
+- Launch **Visual Studio Code**.
+- From the top menu, click **File > Open Folder**.
+- Navigate to the location where you cloned the repository.
+- Open the folder path:  
+  `CS465-full-stack-dev-I > module3 > travlr`
+- Click **"Select Folder"** (or **"Open"** on macOS).
+- The `travlr` project should now open in the VS Code workspace.
+
+### Open the terminal in VS Code:
+- From the top menu, click **View > Terminal**.
+- Or use the keyboard shortcut:
+  - **Ctrl + `** (Windows/Linux)
+  - **Cmd + `** (macOS)
+- The integrated terminal will appear at the bottom of the screen.
+- If it is not already inside the `travlr` folder, navigate there manually:
+  ```bash
+  cd module3/travlr
+  ```
+
+### Install project dependencies:
+- In the terminal, make sure you are in the `travlr` directory.
+- Run the following command:
+  ```bash
+  npm install
+  ```
+- This will install all dependencies listed in `package.json`.
+
+### Start the local development server:
+- Once dependencies are installed, run:
+  ```bash
+  npm start
+  ```
+- You should see terminal output like:
+  ```
+  > travlr@0.0.0 start
+  > node ./bin/www
+
+  Listening on port 3000
+  ```
+
+### Open the site in your browser:
+- Open your browser and go to:
+  ```
+  http://localhost:3000/
+  ```
+- You should now see the homepage of the Travlr Getaways site.
+- Use the navigation bar to browse:
+  - Home
+  - Travel
+  - Meals
+  - News
+  - Rooms
+  - About
+  - Contact
+
+### Stop the server:
+- To stop the server, return to the terminal window and press:
+  ```
+  Ctrl + C
+  ```
+- This will safely stop the local server running on port 3000.
+
+---
 
 Acknowledgements
 	•	Node.js
