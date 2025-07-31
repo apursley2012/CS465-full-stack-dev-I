@@ -59,7 +59,8 @@ This module significantly enhances the maintainability and scalability of the Tr
 - **Dynamic Web Pages:** All key pages (Travel, Meals, Rooms, News, About, Contact, Home) are rendered dynamically using Handlebars templates, providing a flexible and scalable site experience.
 - **Content Management via JSON:** Page content is stored and managed in external JSON files, enabling easy content updates without changing code or templates.
 - **Consistent Navigation:** The site features a reusable header and footer partial that ensures consistent navigation menus and branding across all pages.
-- **Image and Media Integration:** Each page displays images associated with content (e.g., meals photos, room photos) pulled dynamically from JSON data.Clean URL Routing: Express routes handle requests and render the appropriate page templates seamlessly with user-friendly URLs.
+- **Image and Media Integration:** Each page displays images associated with content (e.g., meals photos, room photos) pulled dynamically from JSON data.
+- **Clean URL Routing:** Express routes handle requests and render the appropriate page templates seamlessly with user-friendly URLs.
 - **Modular Codebase:** Separation of concerns with dedicated controllers, routes, views, and data files to simplify maintenance and future development.
 - **Scalable Design:** The architecture supports adding new pages or modifying existing ones with minimal effort, thanks to JSON-driven data and templates.
 - **Improved User Experience:** Dynamic rendering ensures fast page loads and easy content management for a better end-user experience.
@@ -128,6 +129,8 @@ This module significantly enhances the maintainability and scalability of the Tr
 
 This guide provides instructions specifically for setting up and preparing to use Visual Studio Code (VS Code) to run the repo locally.
 
+Before attempting to set up the project, ensure the following tools are installed on your system:
+
 ## Web Browser
 
 A modern browser like Chrome, Firefox, Edge, or Safari to view the site.
@@ -136,6 +139,7 @@ Click a browser icon below to be taken to the download page for that browser. </
 
 ---
 
+<div align="center">
 <table>
   <tr>
     <td align="center">
@@ -174,9 +178,21 @@ Click a browser icon below to be taken to the download page for that browser. </
     </td>
   </tr>
 </table>
+</div>
 
 ---
 
+<div align="left" max-width=150px style="margin-left=30px; margin-right=30px; padding-left=30px; padding-right=30px;">
+<figure align="center" style="margin-left=30px; margin-right=30px; padding-left=30px; padding-right=30px;">
+	<a href="https://code.visualstudio.com">
+		<img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0771.png" width="60px" alt="VS Code Icon"></a>
+	<br><figcaption style="text-align: center";> Download Now <a href="https://code.visualstudio.com"></a>
+	</figcaption>
+</figure>
+</div>
+
+---
+			
 ## Visual Studio (VS) Code:
 
 *Here's a step-by-step guide to installing Visual Studio Code (VS Code) on your computer, primarily for Windows, with noted differences for macOS and Linux:*  
