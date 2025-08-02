@@ -2,143 +2,132 @@
 
 <div align="center">
     <h1> Travlr Getaways </h1>
-    <h3><em> Module 1: Setting Up the Static Site </em></h3>
+    <h3><em> Module 1: Setting Up Your Environment & Creating Your First Static HTML Website </em></h3>
 </div>
+
+---
 
 <img src="public/images/upscaledlogo.png" alt="Travlr Getaways Logo" width="100%">
 
 ---
 
-# Project Overview
+## Project Overview 
 
-<details open>
-  <summary><strong>Show / Hide</strong></summary>
-  <br>
-Travlr Getaways Module 1 establishes the foundation for the project by setting up the initial static website using HTML5, CSS3, and Express.js. This module focuses on creating the core structure, adding styling, and serving the static site through Express. The goal is to create a baseline version of the website with all planned static pages in place before transitioning to more dynamic, data-driven features in later modules.
-</details>
-
----
-
-# Features
-
-<details open>
-<summary><strong>Show / Hide</strong></summary>
-
-- **Static Web Pages:** Home, Travel, Meals, Rooms, News, About, and Contact pages are built using HTML and CSS.
-- **Consistent Navigation:** All pages share a uniform header and footer for site-wide navigation.
-- **Static Assets:** Includes a `public` folder for CSS, images, and other static files.
-- **Express.js Server:** Serves static HTML and CSS files locally.
-- **Baseline for Future Development:** Provides the starting point for enhancements in later modules.
-
-</details>
+<div align="center">
+  <p align="center">
+    Module 1 introduces the Travlr Getaways project by setting up the development environment and serving a static website using Express.js. In this module, you install essential tools, configure the Express application, and place all static HTML, CSS, and image files into the public directory. The goal is to serve a complete, navigable site with consistent styling and structure, laying the groundwork for future modules that will add more dynamic functionality.
+  </p>
+  <a href="#prerequisites"><strong>Quick Start »</strong></a>
+    &nbsp;&middot;&nbsp;
+    <a href="#page-previews"><strong> Page Previews »</strong></a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://github.com/apursley2012/CS465-full-stack-dev-I/issues/new"><strong> Report Issue »</strong></a>
+</div>
 
 ---
 
-# Page Previews
+## Table of Contents
 
-## Home
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-  <div align="center">
-    <img src="public/images/index1.png" alt="Home Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/index2.png" alt="Home Page 2" width="100%" />
-  </div>
-</details>
-
-## Travel
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-  <div>
-    <img src="public/images/travel1.png" alt="Travel Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/travel2.png" alt="Travel Page 2" width="100%" />
-  </div>
-</details>
-
-## Rooms
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-  <div>
-    <img src="public/images/rooms1.png" alt="Rooms Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/rooms2.png" alt="Rooms Page 2" width="100%" />
-  </div>
-</details>
-
-## Meals
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-  <div>
-    <img src="public/images/meals1.png" alt="Meals Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/meals2.png" alt="Meals Page 2" width="100%" />
-  </div>
-</details>
-
-## News
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-  <div>
-    <img src="public/images/news1.png" alt="News Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/news2.png" alt="News Page 2" width="100%" />
-  </div>
-</details>
-
-## About
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-  <div>
-    <img src="public/images/about1.png" alt="About Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/about2.png" alt="About Page 2" width="100%" />
-  </div>
-</details>
-
-## Contact
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-  <div>
-    <img src="public/images/contact1.png" alt="Contact Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/contact2.png" alt="Contact Page 2" width="100%" />
-  </div>
-</details>
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Page Previews](#page-previews)
+- [Tech Stack](#tech-stack)
+- [Prerequisites](#prerequisites)
+- [Installation & Setup](#installation--setup)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
 ---
 
-# Tech Stack
+## About the Project
 
-<details open>
-  <summary><strong>Show / Hide</strong></summary>
-
-- **HTML5** – Structure and content of the web pages.
-- **CSS3** – Styling for all pages.
-- **JavaScript (Vanilla)** – Any client-side interactions.
-- **Express.js** – Node.js framework used to serve static files.
-- **Git** – Version control for managing code changes.
-
-</details>
+Module 1 focuses on building the foundation for the Travlr Getaways application. You will set up Node.js, npm, Git, and Visual Studio Code, then create an Express.js application configured to serve static HTML files. The HTML, CSS, and image assets are placed in the `public/` directory so that they are accessible directly via the browser. This static site represents the initial stage of the project before introducing dynamic templating or database functionality in later modules.
 
 ---
 
-# Prerequisites
+## Features
 
-(Identical structure to Module 3 prerequisites, but without Handlebars mention — still requires Node.js, npm, VS Code, Git, and a modern browser.)
-
----
-
-# Installation & Usage
-
-Follow these steps to run the Module 1 project locally. You can use either **Visual Studio Code** or the **Command Line**.
+- **Static Web Pages:** All pages (Home, Travel, Meals, Rooms, News, About, Contact) are served as static HTML files via Express.
+- **Centralized Public Assets:** HTML, CSS, and images are stored in a single `public/` folder for easy management.
+- **Consistent Navigation:** Shared navigation menus and consistent page styling across the site.
+- **Image and Media Integration:** Images are displayed within pages directly from the public folder.
+- **Simple File-Based Updates:** Updating HTML or CSS files in the public folder immediately reflects changes on the site without a server restart.
 
 ---
 
-## Method 1 - Visual Studio (VS) Code
-<details open>
-  <summary><strong>Show / Hide</strong></summary>
+## Page Previews
 
-### Clone the repository
-```bash
-git clone https://github.com/apursley2012/CS465-full-stack-dev-I.git
+### Home Page
+<div align="center">
+  <img src="public/images/index1.png" alt="Home Page 1" width="100%" style="margin-bottom: 10px;" />
+  <img src="public/images/index2.png" alt="Home Page 2" width="100%" />
+</div>
+
+### Travel Page
+<div>
+  <img src="public/images/travel1.png" alt="Travel Page 1" width="100%" style="margin-bottom: 10px;" />
+  <img src="public/images/travel2.png" alt="Travel Page 2" width="100%" />
+</div>
+
+### Rooms Page
+<div>
+  <img src="public/images/rooms1.png" alt="Rooms Page 1" width="100%" style="margin-bottom: 10px;" />
+  <img src="public/images/rooms2.png" alt="Rooms Page 2" width="100%" />
+</div>
+
+### Meals Page
+<div>
+  <img src="public/images/meals1.png" alt="Meals Page 1" width="100%" style="margin-right: 10px;" />
+  <img src="public/images/meals2.png" alt="Meals Page 2" width="100%" />
+</div>
+
+### News Page
+<div>
+  <img src="public/images/news1.png" alt="News Page 1" width="100%" style="margin-right: 10px;" />
+  <img src="public/images/news2.png" alt="News Page 2" width="100%" />
+</div>
+
+### About Page
+<div>
+  <img src="public/images/about1.png" alt="About Page 1" width="100%" style="margin-right: 10px;" />
+  <img src="public/images/about2.png" alt="About Page 2" width="100%" />
+</div>
+
+### Contact Page
+<div>
+  <img src="public/images/contact1.png" alt="Contact Page 1" width="100%" style="margin-right: 10px;" />
+  <img src="public/images/contact2.png" alt="Contact Page 2" width="100%" />
+</div>
+
+---
+
+## Tech Stack
+
+- **Node.js** – JavaScript runtime environment used to run the backend server.
+- **Express.js** – Minimal and flexible Node.js framework for serving web pages.
+- **JavaScript (ES6+)** – Used for server setup and routing logic.
+- **HTML5 & CSS3** – Structure and style for the web pages.
+- **Git** – Version control for managing the project code.
+
+---
+
+## Prerequisites
+
+The same prerequisites as later modules apply for installing tools:
+
+- **Web Browser:** Chrome, Firefox, Edge, or Safari  
+- **Visual Studio Code**  
+- **Node.js and npm**  
+- **Git**
+
+*(Include the same detailed install steps for each tool as in Module 3 README.)*
+
+---
+
+## Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/apursley2012/CS465-full-stack-dev-I.git
