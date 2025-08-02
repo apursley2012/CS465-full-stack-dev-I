@@ -688,15 +688,30 @@ Ctrl + C
 # Contact
 
  <div align="center">
-	 <h1><b><em> Developer: Alysha Purlsey </em></b></h1>
-	 <h3> GitHub: <em><a href="https://github.com/apursley2012" target="_blank" rel="noopener noreferrer">apursley2012</a></em> </h3>
-	 <h3><em> School Email: <a href="mailto:alysha.pursley@snhu.edu">alysha.pursley@snhu.edu</a></em></h3>
-  	 <h3><em> Personal Email: <a href="mailto:alysha.pursley@gmail.com">alysha.pursley@gmail.com</a></em></h3>
-	<h4> Please feel free to reach out to me on Github or using one of the emails linked above with any comments, questions or concerns, or feedback and suggestions!
- <br>
+	 <h1> Developer </h1>
+	 <br>
+	 <h3><b><em> Alysha Purlsey </em></b></h3>
+	 <br>
+<h4><em><b> Please feel free to reach out to me using one of the contact detail links below with any comments, questions or concerns, or feedback and suggestions! 
  <br>
  Thank you so much for taking the time to visit my profile and view this repository!
-	</h4>
+	</b></em></h4>
+	 <br>
+	 <h2> GitHub Profile </h2>
+	 <br>
+	<h3><b><em>
+		<a href="https://github.com/apursley2012" target="_blank" rel="noopener noreferrer">apursley2012</a></em></b></h3>
+	 <br>
+	 <h2> University Email </h2>
+	 <br>
+	 <h3><b><em> 
+		 <a href="mailto:alysha.pursley@snhu.edu">alysha.pursley@snhu.edu</a></em></b></h3>
+	 <br>
+  	 <h2> Personal Email </h2>
+	 <br>
+	 <h3><b><em>
+		 <a href="mailto:alysha.pursley@gmail.com">alysha.pursley@gmail.com</a></em></b></h3>
+	
  </div>
 
 
