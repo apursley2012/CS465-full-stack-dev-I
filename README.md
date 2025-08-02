@@ -62,3 +62,129 @@ The primary goal of this module is to copy the supplied static Travlr site into 
 
 Completing this module creates a clean, version-controlled foundation in the <code>module1</code> branch. That foundation will support future enhancements such as templating, JSON-driven content, and database connectivity introduced in later modules.
 </details>
+
+---
+
+---
+
+# Features
+
+<details open>
+<summary><strong>Show / Hide</strong></summary>
+
+- **Static Web Pages Served:** All core pages (Home, Travel, Meals, Rooms, News, About, Contact) render exactly as provided via Express’s static asset middleware.
+- **Express Baseline Scaffold:** The project is generated with the Express generator and pre-configured for Handlebars, creating a solid foundation for later dynamic enhancements.
+- **Local Development Server:** Run the site locally on <code>http://localhost:3000</code> using <code>npm start</code> for easy testing and iterative development.
+- **Stylesheet Path Fix:** Renaming the default <code>public/stylesheets</code> folder to <code>public/css</code> ensures the site’s <code>style.css</code> loads correctly without broken links.
+- **Clean Project Structure:** Public assets (HTML, images, CSS) are organized in predictable folders, while Express routes and views stay separate for scalability.
+- **Version Control Integration:** A dedicated <code>module1</code> branch captures the baseline commit history, allowing isolated development for future modules.
+
+  </details>
+
+---
+
+---
+
+# Page Previews
+
+## Home 
+
+<details>
+  <summary><strong>Show/Hide Preview</strong></summary>
+
+  <div align="center">
+    <img src="public/images/index1.png" alt="Home Page 1" width="100%" style="margin-bottom: 10px;" />
+    <img src="public/images/index2.png" alt="Home Page 2" width="100%" />
+  </div>
+
+</details>
+
+## Travel
+
+<details>
+  <summary><strong>Show/Hide Preview</strong></summary>
+
+  <div>
+    <img src="public/images/travel1.png" alt="Travel Page 1" width="100%" style="margin-bottom: 10px;" />
+    <img src="public/images/travel2.png" alt="Travel Page 2" width="100%" />
+  </div>
+
+</details>
+
+## Rooms
+
+<details>
+  <summary><strong>Show/Hide Preview</strong></summary>
+
+  <div>
+    <img src="public/images/rooms1.png" alt="Rooms Page 1" width="100%" style="margin-bottom: 10px;" />
+    <img src="public/images/rooms2.png" alt="Rooms Page 2" width="100%" />
+  </div>
+
+</details>
+
+## Meals
+
+<details>
+  <summary><strong>Show/Hide Preview</strong></summary>
+
+  <div>
+    <img src="public/images/meals1.png" alt="Meals Page 1" width="100%" style="margin-bottom: 10px;" />
+    <img src="public/images/meals2.png" alt="Meals Page 2" width="100%" />
+  </div>
+
+</details>
+
+## News
+
+<details>
+  <summary><strong>Show/Hide Preview</strong></summary>
+
+ <div>
+    <img src="public/images/news1.png" alt="News Page 1" width="100%" style="margin-bottom: 10px;" />
+    <img src="public/images/news2.png" alt="News Page 2" width="100%" />
+  </div>
+
+</details>
+
+## About
+
+<details>
+  <summary><strong>Show/Hide Preview</strong></summary>
+
+  <div>
+    <img src="public/images/about1.png" alt="About Page 1" width="100%" style="margin-bottom: 10px;" />
+    <img src="public/images/about2.png" alt="About Page 2" width="100%" />
+  </div>
+
+</details>
+
+## Contact
+
+<details>
+  <summary><strong>Show/Hide Preview</strong></summary>
+
+  <div>
+    <img src="public/images/contact1.png" alt="Contact Page 1" width="100%" style="margin-bottom: 10px;" />
+    <img src="public/images/contact2.png" alt="Contact Page 2" width="100%" />
+  </div>
+
+</details>
+
+---
+
+---
+
+# Tech Stack
+
+<details open>
+  <summary><strong>Show / Hide</strong></summary>
+
+- **Node.js** – JavaScript runtime environment used to run the backend server and scripts.
+- **Express.js** – Minimal and flexible Node.js web application framework for building the server and handling routing.
+- **Handlebars (express-handlebars)** – View engine scaffolded by the Express generator (templates not yet used in Module&nbsp;1).
+- **JavaScript (ES6+)** – Core programming language for server setup and configuration.
+- **HTML5 & CSS3** – Structure and style for the static web pages.
+- **Git** – Version control for managing code changes and collaboration.
+
+  </details>
