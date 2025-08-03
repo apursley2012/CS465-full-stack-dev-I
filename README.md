@@ -37,6 +37,10 @@
   - [Contact](#contact)
 - [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
+  - [1. Web Browser](#1-web-browser)
+  - [2. Visual Studio (VS) Code](#2-visual-studio-vs-code)
+  - [3. Node.js & NPM](#3-nodejs--npm)
+  - [4. Git](#4-git)
 - [Installation & Usage](#installation--usage)
 	- [Method 1 - Visual Studio (VS) Code](#method-1---visual-studio-vs-code)
  	- [Method 2 - Command Line](#method-2---command-line)
@@ -65,8 +69,6 @@ Completing this module creates a clean, version-controlled foundation in the <co
 
 ---
 
----
-
 # Features
 
 <details open>
@@ -80,8 +82,6 @@ Completing this module creates a clean, version-controlled foundation in the <co
 - **Version Control Integration:** A dedicated <code>module1</code> branch captures the baseline commit history, allowing isolated development for future modules.
 
   </details>
-
----
 
 ---
 
@@ -173,8 +173,6 @@ Completing this module creates a clean, version-controlled foundation in the <co
 
 ---
 
----
-
 # Tech Stack
 
 <details open>
@@ -188,3 +186,259 @@ Completing this module creates a clean, version-controlled foundation in the <co
 - **Git** – Version control for managing code changes and collaboration.
 
   </details>
+
+---
+
+# Prerequisites
+
+## 1. Web Browser
+<details open>
+  <summary><strong>Show / Hide</strong></summary>
+
+A modern browser like Chrome, Firefox, Edge, or Safari to view the site.
+
+Click a browser icon below to be taken to the download page for that browser. </p>
+
+<div align="center" valign="middle">
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.google.com/chrome/" target="_blank">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="120" height="120" height="100">
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="https://www.mozilla.org/firefox/" target="_blank">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="120" height="120" height="100">
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="https://www.microsoft.com/edge" target="_blank">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="120" height="120" height="100">
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="https://www.apple.com/safari/" target="_blank">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="120" height="120" height="100">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <em><strong><a href="https://www.google.com/chrome/" target="_blank">Download</a></strong></em><br>Google Chrome
+    </td>
+    <td align="center" valign="top">
+	    <em><strong><a href="https://www.mozilla.org/firefox/" target="_blank">Download </a></strong></em><br> Mozilla Firefox
+    </td>
+    <td align="center" valign="top">
+      <em><strong><a href="https://www.microsoft.com/edge" target="_blank">Download</a></strong></em><br>Microsoft Edge
+    </td>
+    <td align="center" valign="top">
+	    <em><strong><a href="https://www.apple.com/safari/" target="_blank">Download</a></strong></em><br>Apple Safari
+    </td>
+  </tr>
+</table>
+</div>
+
+</details>
+
+---
+
+## 2. Visual Studio (VS) Code:
+<details open>
+  <summary><strong>Show / Hide</strong></summary>
+
+<div align="center">
+	<table>
+		<tr>
+			<td align="center">
+				<a href="https://code.visualstudio.com" target="_blank"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module3/public/images/IMG_0771.png" alt="Visual Studio Code" width="120" height="120" height="100">
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" valign="top">
+				<strong><em><a href="https://code.visualstudio.com" target="_blank">Download</a></em></strong><br>Visual Studio Code
+			</td>
+		</tr>
+	</table>
+</div>
+
+*Here's a step-by-step guide to installing Visual Studio Code (VS Code) on your computer, primarily for Windows, with noted differences for macOS and Linux:*  
+
+### Download the installer:
+- Open your web browser and go to the official Visual Studio Code website: [code.visualstudio.com](https://code.visualstudio.com).
+- Click on the "Download" button for your operating system (Windows, macOS, or Linux).
+- The installer file (e.g., `VSCodeUserSetup-x64-1.x.x.exe` for Windows) will begin downloading.  
+
+### Launch the installer:
+- Once the download is complete, locate the installer file in your Downloads folder.
+- Double-click the installer file to launch the installation process.  
+
+### Follow the installation prompts:
+- ***Accept the License Agreement:*** Read and accept the license agreement, then click "Next".
+- ***Choose Installation Location:*** The default location is usually fine, but you can choose a different location if needed. Click "Next".
+- ***Start Menu Folder:*** Keep the default Start Menu folder name or change it as desired. Click "Next".
+    - **Additional Tasks:**
+      - On Windows, consider checking the boxes for creating a desktop icon and adding "Open with Code" to the right-click context menu (these are useful shortcuts).
+      - Ensure the "Add to PATH" option is checked (usually the default) as this allows you to launch VS Code from your terminal or command prompt.
+      - Click "Next".
+- ***Confirm Installation:*** Review your selections and click "Install".
+- The installation will proceed.
+- Click "Finish" to exit the installer and launch Visual Studio Code (by default).
+
+- **For macOS users:**  
+    - Download the macOS version.
+    - Open the downloaded `.dmg` file.
+    - Drag the Visual Studio Code.app to your Applications folder.
+    - Optionally add it to your Dock by right-clicking the icon and choosing "Options" → "Keep in Dock".
+
+- **For Linux users (Debian/Ubuntu):**        - Download the `.deb` package.
+    - Install it through your graphical software center or using the command line:
+     ```bash
+     sudo apt install ./<file>.deb
+     ```
+    - ***Note:*** The installer will prompt to add the apt repository for auto-updates.
+
+</details>
+
+---
+
+## 3. Node.js & NPM
+<details open>
+  <summary><strong>Show / Hide</strong></summary>
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://nodejs.org" target="_blank">
+        <img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0772.png" alt="Node.js Icon" width="120" height="120">
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="https://nodejs.org" target="_blank">
+        <img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0774.png" alt="NPM Icon" width="120" height="120">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"  valign="middle">
+	    <strong><em><a href="https://nodejs.org" target="_blank">Download</a></em></strong> <br> Node.js & NPM
+    </td>
+  </tr>
+</table>
+</div>
+
+*Here's a step-by-step guide to installing Node.js (and npm, which is included) on your computer, primarily for Windows, with noted differences for macOS and Linux:*  
+
+### Download the installer:
+- Open your web browser and go to the official Node.js website: [nodejs.org](https://nodejs.org).
+- Click the **LTS (Recommended for Most Users)** download button for your operating system (Windows, macOS, or Linux).
+- The installer file (e.g., `node-vxx.x.x-x64.msi` for Windows) will begin downloading.  
+
+### Launch the installer:
+- Once the download is complete, locate the installer file in your Downloads folder.
+- Double-click the installer file to begin the installation process.  
+
+### Follow the installation prompts:
+- ***Welcome Screen:*** Click "Next".
+- ***License Agreement:*** Read and accept the license agreement, then click "Next".
+- ***Choose Installation Location:*** The default location is usually fine, but you can choose a different folder if desired. Click "Next".
+- ***Select Components:*** Leave the default components selected. Click "Next".
+- ***Tools for Native Modules:*** (Optional) You may be prompted to install additional tools like Python and Visual Studio Build Tools. You can skip this unless you plan to use native modules. Click "Next".
+- ***Ready to Install:*** Review your selections and click "Install".
+- When installation finishes, click "Finish" to exit the installer.
+
+- **For macOS users:**  
+    - Download the `.pkg` file from the Node.js website.
+    - Double-click it to launch the installer and follow the on-screen instructions.
+    - Once complete, Node.js and npm will be available system-wide.
+
+- **For Linux users (Debian/Ubuntu):**  
+    - Open a terminal and run the following commands:
+      ```bash
+      sudo apt update
+      sudo apt install nodejs npm
+      ```
+
+### Verify the installation:
+- Open your terminal (Command Prompt, PowerShell, or Terminal).
+- Run the following commands:
+  ```bash
+  node -v
+  npm -v
+  ```
+- If Node.js and npm are installed correctly, you will see version numbers for both.
+
+</details>
+
+---
+
+## 4. Git:
+<details open>
+  <summary><strong>Show / Hide</strong></summary>
+
+<div align="center">
+	<table>
+		<tr>
+			<td align="center" valign="middle">
+				<a href="https://code.visualstudio.com" target="_blank"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module3/public/images/IMG_0773.png" alt="Git" width="120" height="120" height="100"></a>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" valign="top">
+			<strong><em><a href="https://code.visualstudio.com" target="_blank">Download</a></em></strong><br>Git
+			</td>
+		</tr>
+	</table>
+</div>
+
+*Here's a step-by-step guide to installing Git on your computer, primarily for Windows, with noted differences for macOS and Linux:*  
+
+### Download the installer:
+- Open your web browser and go to the official Git website: [git-scm.com/downloads](https://git-scm.com/downloads).
+- The site will automatically detect your operating system.
+- Click the download link for **Windows**, **macOS**, or **Linux**.
+- The installer file (e.g., `Git-2.x.x-x64.exe` for Windows) will begin downloading.  
+
+### Launch the installer:
+- Once the download is complete, locate the installer file in your Downloads folder.
+- Double-click the installer file to begin the installation process.  
+
+### Follow the installation prompts:
+- ***Accept the License Agreement:*** Read and accept the license agreement, then click "Next".
+- ***Choose Installation Location:*** The default location is usually fine, but you can choose a different location if needed. Click "Next".
+- ***Select Components:*** Keep the default selections. Ensure “Git Bash Here” and “Git GUI Here” are checked.
+- ***Choosing Default Editor:*** Choose your preferred code editor or leave the default (Vim or Notepad). Click "Next".
+- ***Adjusting PATH Environment:*** Select “Git from the command line and also from 3rd-party software” (recommended). Click "Next".
+- ***Other Configuration Settings:*** Leave default options selected unless you have a reason to change them.
+- Click "Install" to begin installation.
+- Click "Finish" to exit the installer when setup is complete.
+
+- **For macOS users:**  
+    - Git is available through the Xcode Command Line Tools.
+    - Open the Terminal app and run:
+      ```bash
+      xcode-select --install
+      ```
+    - A popup window will appear. Click "Install" and wait for the installation to finish.
+
+- **For Linux users (Debian/Ubuntu):**  
+    - Open a terminal and run the following commands:
+      ```bash
+      sudo apt update
+      sudo apt install git
+      ```
+
+### Verify the installation:
+- Open your terminal (Command Prompt, PowerShell, Terminal, or Git Bash).
+- Type the following and press Enter:
+  ```bash
+  git --version
+  ```
+- If Git is installed correctly, you will see the version number displayed.
+
+</details>
+
+---
