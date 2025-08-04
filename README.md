@@ -40,6 +40,10 @@
   - [Contact](#contact)
 - [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
+  - [1. Web Browser](#1-web-browser)
+  - [2. Visual Studio (VS) Code](#2-visual-studio-vs-code)
+  - [3. Node.js & NPM](#3-nodejs--npm)
+  - [4. Git](#4-git)
 - [Installation & Usage](#installation--usage)
   - [Method 1 - Visual Studio (VS) Code](#method-1---visual-studio-vs-code)
   - [Method 2 - Command Line](#method-2---command-line)
@@ -309,7 +313,7 @@ Click a browser icon below to be taken to the download page for that browser. </
 
 ---
 
-## 3. Node.js and npm:
+## 3. Node.js & NPM
 <details open>
   <summary><strong>Show / Hide</strong></summary>
 
@@ -611,7 +615,6 @@ Press **Ctrl + C**.
 - Express.js  
 - Handlebars.js  
 - Free Website Templates  
-- SNHU instructor guidance & course materials  
 
 </details>
 
