@@ -94,8 +94,9 @@ Travlr Getaways **Module&nbsp;2** converts the website from a collection of stat
 
 # Page Previews
 
-*(Screenshots are unchanged from Module 3 and are included for consistency.)*
-
+<details>
+  <summary><strong>Show/Hide Preview</strong></summary>
+	
 ## Home 
 
 <details>
@@ -178,6 +179,7 @@ Travlr Getaways **Module&nbsp;2** converts the website from a collection of stat
     <img src="public/images/contact2.png" alt="Contact Page 2" width="100%" />
   </div>
 
+</details>
 </details>
 
 ---
@@ -451,7 +453,6 @@ Click a browser icon below to be taken to the download page for that browser. </
 </details>
 
 ---
----
 
 # Installation & Usage
 
@@ -558,13 +559,8 @@ Press **Ctrl + C**.
   2. Rename it to `.hbs`.  
   3. Create a controller and route to serve it.  
   4. Update nav links in the header partial.  
-- **Commit & Push Work**
-  ```bash
-  git status
-  git add .
-  git commit -m "Module 2 completed baseline"
-  git push --set-upstream origin module2
-  ```
+
+---
 
 </details>
 
@@ -576,31 +572,33 @@ Press **Ctrl + C**.
 
 ```
 🗂️travlr
- ├─ 📁app_server/
- │  ├─ 📁controllers/
- │  │  ├─ main.js
- │  │  └─ travel.js
- │  ├─ 📁routes/
- │  │  ├─ index.js
- │  │  └─ travel.js
- │  └─ 📁views/
- │     ├─ 📁layouts/
- │     │  └─ layout.hbs
- │     ├─ 📁partials/
- │     │  ├─ header.hbs
- │     │  └─ footer.hbs
- │     ├─ index.hbs
- │     └─ travel.hbs
- ├─ 📁bin/
- │  └─ www
- ├─ 📁public/
- │  ├─ 📁css/
- │  │  └─ style.css
- │  └─ 📁images/
- ├─ app.js
- ├─ package.json
- ├─ package-lock.json
- └─ README.md
+ ↳ 📁app_server/
+ |  ↳ 📁controllers/
+ |  |  ↳ 📄main.js
+ |  |  ↳ 📄travel.js
+ |  ↳ 📁routes/
+ |  |  ↳ 📄index.js
+ |  |  ↳ 📄travel.js
+ |  ↳ 📁views/
+ |  |  ↳ 📁layouts/
+ |  |  |  ↳ 📄layout.hbs
+ |  |  ↳ 📁partials/
+ |  |  |  ↳ 📄header.hbs
+ |  |  |  ↳ 📄footer.hbs
+ |  |  ↳ 📄index.hbs
+ |  |  ↳ 📄travel.hbs
+ ↳ 📁bin/
+ |  ↳ 📄www
+ ↳ 📁public/
+ |  ↳ 📁css/
+ |  |  ↳ 📄style.css
+ |  ↳ 📁images/
+ 📄.gitignore
+ 📄app.js
+ 📄package.json
+ 📄package-lock.json
+ 📄README.md
+
 ```
 
 </details>
