@@ -37,13 +37,15 @@
   - [Contact](#contact)
 - [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
-  - [1. Web Browser](#1-web-browser)
-  - [2. Visual Studio (VS) Code](#2-visual-studio-vs-code)
-  - [3. Node.js & NPM](#3-nodejs--npm)
-  - [4. Git](#4-git)
+  - [1. Windows Powershell Script Execution Policy (Windows Users Only)](#1-windows-powershell-script-execution-policy-windows-users-only)
+  - [2. Web Browser](#2-web-browser)
+  - [3. Visual Studio (VS) Code](#3-visual-studio-vs-code)
+  - [4. Node.js & NPM](#4-nodejs--npm)
+  - [5. Express Generator (CLI)](#5-express-generator-cli)
+  - [6. Git](#6-git)
 - [Installation & Usage](#installation--usage)
-	- [Method 1 - Visual Studio (VS) Code](#method-1---visual-studio-vs-code)
- 	- [Method 2 - Command Line](#method-2---command-line)
+	- [Method 1 - Visual Studio (VS) Code](#method-1--visual-studio-vs-code)
+ 	- [Method 2 - Command Line](#method-2--command-line)
   	- [Install Static Web Files](#install-static-web-files)
     - [Finalize Module 1 in Git](#finalize-module-1-in-git)
 - [File Structure](#file-structure)
@@ -191,7 +193,45 @@ Completing this module creates a clean, version-controlled foundation in the <co
 
 # Prerequisites
 
-## 1. Web Browser
+## 1. Windows PowerShell Script Execution Policy (Windows Users Only)
+<details open>
+  <summary><strong>Show / Hide</strong></summary>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://learn.microsoft.com/en-us/powershell/" target="_blank">
+          <img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module1/public/images/powershellicon.png" alt="PowerShell Icon" width="150" height="150">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <em><strong><a href="https://learn.microsoft.com/en-us/powershell/" target="_blank">Learn More</a></strong></em><br>Windows PowerShell
+      </td>
+    </tr>
+  </table>
+</div>
+
+*Some npm-based tools create or run local PowerShell scripts. If you are on Windows and have never adjusted your execution policy, you may need to allow local scripts before running the project for the first time.*
+
+### Check current policy
+    Get-ExecutionPolicy -List
+
+### Enable local scripts
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+### Verify the change
+    Get-ExecutionPolicy -List
+
+You should now see **RemoteSigned** listed for **CurrentUser**.
+
+*Note – On domain-joined machines you may need administrator rights or a Group Policy update. If you are unsure, contact your system administrator before changing policies.*
+
+</details>
+
+## 2. Web Browser
 <details open>
   <summary><strong>Show / Hide</strong></summary>
 
@@ -204,22 +244,22 @@ Click a browser icon below to be taken to the download page for that browser. </
   <tr>
     <td align="center">
       <a href="https://www.google.com/chrome/" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="120" height="120" height="100">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/chrome.svg" alt="Chrome Icon" width="150" height="150">
       </a>
     </td>
     <td align="center" valign="middle">
       <a href="https://www.mozilla.org/firefox/" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="120" height="120" height="100">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/firefox.svg" alt="Firefox Icon" width="150" height="150">
       </a>
     </td>
     <td align="center" valign="middle">
       <a href="https://www.microsoft.com/edge" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="120" height="120" height="100">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/edge.svg" alt="Edge Icon" width="150" height="150">
       </a>
     </td>
     <td align="center" valign="middle">
       <a href="https://www.apple.com/safari/" target="_blank">
-        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="120" height="120" height="100">
+        <img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module1/public/images/safari.svg" alt="Safari Icon" width="150" height="150">
       </a>
     </td>
   </tr>
@@ -244,7 +284,7 @@ Click a browser icon below to be taken to the download page for that browser. </
 
 ---
 
-## 2. Visual Studio (VS) Code:
+## 3. Visual Studio (VS) Code:
 <details open>
   <summary><strong>Show / Hide</strong></summary>
 
@@ -252,7 +292,7 @@ Click a browser icon below to be taken to the download page for that browser. </
 	<table>
 		<tr>
 			<td align="center">
-				<a href="https://code.visualstudio.com" target="_blank"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module3/public/images/IMG_0771.png" alt="Visual Studio Code" width="120" height="120" height="100">
+				<a href="https://code.visualstudio.com" target="_blank"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module3/public/images/IMG_0771.png" alt="Visual Studio Code" width="150" height="150">
 				</a>
 			</td>
 		</tr>
@@ -304,7 +344,7 @@ Click a browser icon below to be taken to the download page for that browser. </
 
 ---
 
-## 3. Node.js & NPM
+## 4. Node.js & NPM
 <details open>
   <summary><strong>Show / Hide</strong></summary>
 
@@ -313,12 +353,12 @@ Click a browser icon below to be taken to the download page for that browser. </
   <tr>
     <td align="center" valign="middle">
       <a href="https://nodejs.org" target="_blank">
-        <img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0772.png" alt="Node.js Icon" width="120" height="120">
+        <img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0772.png" alt="Node.js Icon" width="150" height="150">
       </a>
     </td>
     <td align="center" valign="middle">
       <a href="https://nodejs.org" target="_blank">
-        <img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0774.png" alt="NPM Icon" width="120" height="120">
+        <img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module3/public/images/IMG_0774.png" alt="NPM Icon" width="150" height="150">
       </a>
     </td>
   </tr>
@@ -375,7 +415,43 @@ Click a browser icon below to be taken to the download page for that browser. </
 
 ---
 
-## 4. Git:
+## 5. Express Generator (CLI):
+<details open>
+  <summary><strong>Show / Hide</strong></summary>
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://expressjs.com/en/starter/generator.html" target="_blank">
+        <img src="https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module1/public/images/express.png" alt="Express Icon" width="150" height="150">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"  valign="middle">
+	    <strong><em><a href="https://nodejs.org" target="_blank">Download</a></em></strong> <br> Express Generator
+    </td>
+  </tr>
+</table>
+</div>
+
+The Express Generator scaffolds the baseline project for Module 1, creating an Express app pre-configured for Handlebars and equipped with a starter file structure.
+
+### Install globally
+```bash
+npm install -g express-generator
+```
+
+### Verify installation
+```bash
+express --version
+```
+A version number (e.g., <code>4.18.2</code>) confirms that the generator is installed and ready to use.
+
+</details>
+
+## 6. Git:
 <details open>
   <summary><strong>Show / Hide</strong></summary>
 
@@ -383,7 +459,7 @@ Click a browser icon below to be taken to the download page for that browser. </
 	<table>
 		<tr>
 			<td align="center" valign="middle">
-				<a href="https://code.visualstudio.com" target="_blank"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module3/public/images/IMG_0773.png" alt="Git" width="120" height="120" height="100"></a>
+				<a href="https://code.visualstudio.com" target="_blank"><img src="https://raw.githubusercontent.com/apursley2012/CS465-full-stack-dev-I/refs/heads/module3/public/images/IMG_0773.png" alt="Git" width="150" height="150" height="100"></a>
 			</td>
 		</tr>
 		<tr>
@@ -442,3 +518,212 @@ Click a browser icon below to be taken to the download page for that browser. </
 </details>
 
 ---
+
+# Installation & Usage
+
+Follow these steps to set up the Module 1 project locally.  
+You can use either the **Visual Studio (VS) Code method** or the **Command Line method** — both achieve the same result.
+
+---
+
+## Method 1 – Visual Studio (VS) Code
+<details open>
+  <summary><strong>Show / Hide</strong></summary>
+
+  ### Create and scaffold the Express project
+  - Launch **Visual Studio Code**.
+  - Open the integrated terminal (**View > Terminal** or `Ctrl + \`` on Windows/Linux, `Cmd + \`` on macOS).
+  - Navigate to (or create) your project folder:
+    ```bash
+    cd ~
+    mkdir travlr
+    cd travlr
+    ```
+  - Install the Express generator globally:
+    ```bash
+    npm install -g express-generator
+    ```
+  - Generate the app with Handlebars and a default `.gitignore`:
+    ```bash
+    express --view=hbs --git --force
+    ```
+  - Install dependencies:
+    ```bash
+    npm install
+    ```
+  - Start the development server:
+    ```bash
+    set DEBUG=travlr:*
+    npm start
+    ```
+  - View the application at:
+    ```
+    http://localhost:3000/
+    ```
+  - Stop the server:
+    ```
+    Ctrl + C
+    ```
+
+</details>
+
+---
+
+## Method 2 – Command Line
+<details open>
+  <summary><strong>Show / Hide</strong></summary>
+
+  ### Create and scaffold the Express project
+  - Open **Command Prompt**, **PowerShell**, or **Terminal**.
+  - Create and enter your project folder:
+    ```bash
+    cd ~
+    mkdir travlr
+    cd travlr
+    ```
+  - Install the Express generator:
+    ```bash
+    npm install -g express-generator
+    ```
+  - Generate the app with Handlebars and a default `.gitignore`:
+    ```bash
+    express --view=hbs --git --force
+    ```
+  - Install dependencies:
+    ```bash
+    npm install
+    ```
+  - Start the development server:
+    ```bash
+    set DEBUG=travlr:*
+    npm start
+    ```
+  - View the application:
+    ```
+    http://localhost:3000/
+    ```
+  - Stop the server:
+    ```
+    Ctrl + C
+    ```
+
+</details>
+
+---
+
+## Install Static Web Files
+<details open>
+  <summary><strong>Show / Hide</strong></summary>
+
+  1. Unzip the provided **travlr.zip** into your project folder.  
+  2. Copy all `.html` files into **<code>public/</code>**.  
+  3. Copy the **images** folder contents into **<code>public/images/</code>**.  
+  4. Copy **style.css** into **<code>public/stylesheets/</code>**, then rename:
+     ```
+     public/stylesheets → public/css
+     ```
+  5. Restart the server:
+     ```bash
+     # stop
+     Ctrl + C
+     # restart
+     npm start
+     ```
+  6. Reload <code>http://localhost:3000/</code> and confirm the site renders with styling.
+
+</details>
+
+---
+
+## Finalize Module 1 in Git
+<details open>
+  <summary><strong>Show / Hide</strong></summary>
+
+  - Create and switch to the Module 1 branch:
+    ```bash
+    git checkout -b module1
+    ```
+  - Stage and commit all files:
+    ```bash
+    git add .
+    git commit -m "Baseline Express Website – static only"
+    ```
+  - Push to GitHub:
+    ```bash
+    git push --set-upstream origin module1
+    ```
+
+</details>
+
+---
+
+# File Structure
+<details>
+  <summary><strong>Show / Hide</strong></summary>
+
+```
+🗂️travlr
+ ↳ 📁bin/
+ |  ↳ 📄www
+ ↳ 📁public/
+ |  ↳ 📁css/
+ |  |  ↳ 📄style.css
+ |  ↳ 📁images/
+ |     ↳ (all static site images)
+ ↳ 📁routes/
+ |  ↳ 📄index.js
+ |  ↳ 📄users.js
+ ↳ 📁views/
+ |  ↳ 📄layout.hbs
+ |  ↳ 📄index.hbs
+ |  ↳ 📄error.hbs
+ 📄.gitignore
+ 📄app.js
+ 📄package.json
+ 📄package-lock.json
+ 📄README.md
+```
+
+</details>
+
+---
+
+# Acknowledgements
+<details>
+  <summary><strong>Show / Hide</strong></summary>
+
+- Node.js  
+- Express.js  
+- Handlebars.js  
+- Free Website Templates
+
+</details>
+
+---
+
+---
+
+# Contact
+
+ <div align="center">
+	 <h1> Developer </h1>
+	 <h3><b><em> Alysha Purlsey </em></b></h3>
+<h4><em><b> Please feel free to reach out to me using one of the contact detail links below with any comments, questions or concerns, or feedback and suggestions! 
+ <br>
+	<br>
+ Thank you so much for taking the time to visit my profile and view this repository!
+	</b></em></h4>
+ </div>
+	 
+
+## GitHub Profile
+
+***[alyshap2012](https://github.com/apursley2012)***
+
+## University Email
+***[alysha.pursley@snhu.edu](mailto:alysha.pursley@snhu.edu)***
+
+## Personal Email
+	 
+***[alysha.pursley@gmail.com](mailto:alysha.pursley@gmail.com)***
+	
