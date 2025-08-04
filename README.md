@@ -180,16 +180,16 @@ Completing this module creates a clean, version-controlled foundation in the <co
 <details open>
   <summary><strong>Show / Hide</strong></summary>
 
-- **Node.js** – JavaScript runtime environment used to run the backend server and scripts.
-- **Express.js** – Minimal and flexible Node.js web application framework for building the server and handling routing.
-- **Handlebars (express-handlebars)** – View engine scaffolded by the Express generator (templates not yet used in Module&nbsp;1).
-- **JavaScript (ES6+)** – Core programming language for server setup and configuration.
-- **HTML5 & CSS3** – Structure and style for the static web pages.
-- **Git** – Version control for managing code changes and collaboration.
-
+- **Node.js** – JavaScript runtime  
+- **Express.js** – web framework  
+- **Handlebars (express-handlebars)** – templating engine 
+- **JavaScript (ES6+)** – core language
+- **HTML5 & CSS3** – structure & style  
+- **Git** – version control
+  
   </details>
 
----
+  ---
 
 # Prerequisites
 
