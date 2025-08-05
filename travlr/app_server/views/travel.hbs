@@ -1,0 +1,22 @@
+{{> header }}
+
+<div id="background">
+  <div id="page">
+    <div class="box">
+      <div class="body" id="site">
+        <h1>TRAVEL</h1>
+        <ul id="travel">
+          {{#each trips}}
+          <li>
+            <a href="/travel"><img src="images/{{this.image}}" alt="{{this.name}}" /></a>
+            <h2>{{this.name}}</h2>
+            {{{this.description}}}
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{> footer }}

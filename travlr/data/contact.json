@@ -1,0 +1,38 @@
+{
+  "title": "Contact",
+  "form": {
+    "action": "index.html",
+    "method": "post",
+    "fields": [
+      {
+        "label": "Name:",
+        "type": "text",
+        "class": "txtfield"
+      },
+      {
+        "label": "Email:",
+        "type": "text", 
+        "class": "txtfield"
+      },
+      {
+        "label": "Subject:",
+        "type": "text",
+        "class": "txtfield"
+      },
+      {
+        "label": "Message:",
+        "type": "textarea",
+        "class": "txtarea"
+      }
+    ],
+    "submitButton": {
+      "class": "btn"
+    }
+  },
+  "companyInfo": {
+    "name": "Travlr Getaways",
+    "address": "123 Lorem Ipsum Cove, Sed Ut City, LI 12345",
+    "telephone": "1-800-999-9999",
+    "fax": "1-800-111-1111"
+  }
+}
