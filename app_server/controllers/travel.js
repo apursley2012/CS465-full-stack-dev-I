@@ -1,12 +1,18 @@
-var fs = require('fs');
-var trips = JSON.parse(fs.readFileSync('./data/trips.json',
-'utf8'));
+const mongoose = require('mongoose');
+const Trip = mongoose.model('trips');
 
-/* Get travel view */
-const travel = (req, res) => {
-    res
-}
-
-module.exports.travel = function(req, res) {
-    res.render('travel', { title: 'Travlr Getaways' });
+module.exports.travel = async function(req, res) {
+  try {
+    const trips = await Trip.find({});
+    res.render('travel', {
+      title: 'Travlr Getaways',
+      trips
+    });
+  } catch (err) {
+    console.log(err);
+    res.render('travel', {
+      title: 'Travlr Getaways',
+      trips: []
+    });
+  }
 };
