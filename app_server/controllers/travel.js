@@ -1,12 +1,9 @@
-var fs = require('fs');
-var trips = JSON.parse(fs.readFileSync('./data/trips.json',
-'utf8'));
+// app_server/controllers/travel.js
+const fs = require('fs');
+const path = require('path');
+const jsonPath = path.join(__dirname, '..', '..', 'data', 'trips.json');
 
-/* Get travel view */
-const travel = (req, res) => {
-    res
-}
-
-module.exports.travel = function(req, res) {
-    res.render('travel', { title: 'Travlr Getaways' });
+module.exports.travel = (req, res) => {
+  const trips = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  res.render('travel', { title: 'Travlr Getaways', trips });
 };

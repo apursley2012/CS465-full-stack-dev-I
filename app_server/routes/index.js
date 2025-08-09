@@ -1,8 +1,8 @@
 // app_server/routes/index.js
 var express = require('express');
-var router = express.Router();
-var ctrlIndex = require('../controllers/index');
+var router  = express.Router();
+var ctrl    = require('../controllers/main');
 
-router.get('/', ctrlIndex.index);
+router.get('/', ctrl.index);
 
 module.exports = router;

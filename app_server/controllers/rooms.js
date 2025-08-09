@@ -1,4 +1,9 @@
 // app_server/controllers/rooms.js
-module.exports.rooms = function(req, res) {
-    res.render('rooms', { title: 'Rooms - Travlr Getaways' });
+const fs = require('fs');
+const path = require('path');
+const jsonPath = path.join(__dirname, '..', '..', 'data', 'rooms.json');
+
+module.exports.rooms = (req, res) => {
+  const rooms = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  res.render('rooms', { title: 'Rooms', rooms });
 };

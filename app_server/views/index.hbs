@@ -1,2 +1,44 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!-- app_server/views/index.hbs -->
+{{> header}}
+
+<div id="contents">
+  <div id="adbox">
+    <img src="/images/sea-sound.jpg" alt="Img">
+    <h1>{{title}}</h1>
+    {{#each intro}}<p>{{this}}</p>{{/each}}
+  </div>
+
+  <div id="main">
+    <div class="box">
+      <div>
+        <div>
+          <h3>Latest Blog</h3>
+          <ul>
+            {{#each latestBlog}}
+            <li>
+              <h4><a href="{{this.url}}">{{this.title}}</a></h4>
+              <span>{{this.date}}</span>
+              <p>{{this.blurb}}</p>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="testimonials" class="box">
+      <div>
+        <div>
+          <h3>Testimonials</h3>
+          <ul>
+            {{#each testimonials}}
+              <li><p>{{this}}</p></li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{> footer}}

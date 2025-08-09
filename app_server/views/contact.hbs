@@ -1,17 +1,41 @@
-{{!-- app_server/views/contact.hbs --}}
+<!-- app_server/views/contact.hbs -->
 {{> header}}
 
 <div id="contents">
   <div class="box">
     <div>
-      <div class="body">
-        <h1>Contact</h1>
-        <p>
-          For inquiries, questions, or to book your vacation, please reach out to us.
-        </p>
-        <p>Email: info@travlrgetaways.com</p>
-        <p>Phone: (555) 123-4567</p>
-        <p>Address: 123 Travel Road, Adventure City, Country</p>
+      <div id="contact" class="body">
+        <h1>{{title}}</h1>
+
+        {{#if form}}
+          <form action="{{form.action}}" method="{{form.method}}">
+            <table><tbody>
+              {{#each form.fields}}
+              <tr>
+                <td>{{this.label}}</td>
+                <td>
+                  {{#if (eq this.type "textarea")}}
+                    <textarea class="{{this.class}}"></textarea>
+                  {{else}}
+                    <input type="{{this.type}}" value="" class="{{this.class}}">
+                  {{/if}}
+                </td>
+              </tr>
+              {{/each}}
+              <tr>
+                <td></td>
+                <td><input type="submit" value="" class="{{form.submitButton.class}}"></td>
+              </tr>
+            </tbody></table>
+          </form>
+        {{/if}}
+
+        {{#if company}}
+          <h2>{{company.name}}</h2>
+          <p>{{company.address}}</p>
+          <p>Tel: {{company.telephone}}</p>
+          <p>Fax: {{company.fax}}</p>
+        {{/if}}
       </div>
     </div>
   </div>
