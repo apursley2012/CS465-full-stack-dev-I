@@ -904,12 +904,12 @@ Ctrl + C
   * If you see duplicate menus in pages, ensure you’re using the shared `layout.hbs` with `{{> header}}` and `{{> footer}}`, and remove any hard-coded nav in individual views.
 
 * **Stop / Restart the Server:**
-
+```
   * Stop: `Ctrl + C`
   * Restart: `npm start`.
-
-</details>
 ```
+</details>
+
 
 ---
 
@@ -974,6 +974,24 @@ Ctrl + C
 📄package.json 
 📄README.md
 ```
+
+</details>
+
+---
+
+# Acknowledgements
+<details>
+  <summary><strong>Show / Hide</strong></summary>
+
+- Node.js  
+- Express.js  
+- Handlebars.js  
+- MongoDB Community Server  
+- MongoDB Compass  
+- Mongoose  
+- Git & GitHub  
+- Visual Studio Code  
+- Free Website Templates
 
 </details>
 
