@@ -1,8 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-const tripsController = require('../controllers/trips');
+// This is where we import the controllers we will route
+const tripsController = require("../controllers/trips");
 
-router.route('/trips').get(tripsController.tripsList);
+// define route for our trips endpoint
+router
+    .route("/trips")
+    .get(tripsController.tripsFindByCode); // GET method routes tripList
 
 module.exports = router;

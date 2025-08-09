@@ -7,7 +7,7 @@ const Model = mongoose.model('trips');
 // and a JSON messsage to the requesting client.
 const tripsList = async (req, res) => {
     const q = await Model
-        .find({}) // No filter, return all records
+        .find({'code' : req.params.tripcode}) // Return single record
         .exec();
 
         // Uncomment the following line to show results of query
@@ -28,6 +28,7 @@ const tripsList = async (req, res) => {
 
 module.exports = {
     tripsList,
+    tripsFindByCode
 };
 
                 

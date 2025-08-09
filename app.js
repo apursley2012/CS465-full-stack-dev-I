@@ -8,13 +8,13 @@ var logger = require('morgan');
 // Define routers
 var indexRouter = require('./app_server/routes/index');
 var travelRouter = require('./app_server/routes/travel');
-var userRouter = require('./app_server/routes/user'); 
-var apiRouter = require('./app_server/routes/api');
+var usersRouter = require('./app_server/routes/users'); 
+var apiRouter = require('./app_api/routes/index');
 
 var handlebars = require('hbs');
 
 // Bring in the database connection
-require('./app_server/models/db');
+require('./app_api/models/db');
 
 var app = express();
 
@@ -35,9 +35,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Wire-up routes to controllers
 app.use('/', indexRouter);
-app.use('/user', userRouter);
-app.use('/', travelRouter);
-app.use('/api', apiRouter); 
+app.use('/users', usersRouter);
+app.use('/travel', travelRouter);
+app.use('/api', apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
