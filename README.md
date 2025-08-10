@@ -2,8 +2,7 @@
 
   <div align="center">
       <h1> Travlr Getaways </h1>
-      <h3><em> Module 5: REST API (Express + Mongoose) <br> 
-        (/api/trips &amp; /api/trips/:tripCode) </em></h3>
+      <h3><em> Module 5: RESTful API </em></h3>
   </div>
 
   <img src="public/images/upscaledlogo.png" alt="Travlr Getaways Logo" width="100%">
