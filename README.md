@@ -2,8 +2,7 @@
 
   <div align="center">
       <h1> Travlr Getaways </h1>
-      <h3><em> Module 4: NoSQL Databases, Models & Schemas <br> 
-        (MongoDB + Mongoose) </em></h3>
+      <h3><em> Module 5: RESTful API </em></h3>
   </div>
 
   <img src="public/images/upscaledlogo.png" alt="Travlr Getaways Logo" width="100%">
