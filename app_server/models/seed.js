@@ -1,20 +1,23 @@
-// Bring in the DB connection and Trip schema
-const mongoose = require('./db');
-const Trip     = require('./travlr');
+const path = require('path');
+const fs = require('fs');
 
-// Read seed data from JSON file
-var fs       = require('fs');
-var trips    = JSON.parse(fs.readFileSync('./data/trips.json', 'utf8'));
+// Initialize DB & model
+require('./db');
+const Trip = require('./travlr');
 
-// delete any existing records, then insert seed data
-const seedDB = async() => {
-  await Trip.deleteMany({});
-  await Trip.insertMany(trips);
-};
+// Load trips from JSON (Module 4 version with extra fields)
+const jsonPath = path.join(__dirname, '..', '..', 'data', 'trips.json');
+const trips = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 
-// Close the MongoDB connection and exit
-seedDB().then(async() => {
-    await mongoose.connection.close();
-    process.exit();
-});
-    
+(async () => {
+  try {
+    // Clear then insert so reseeding is clean
+    await Trip.deleteMany({});
+    await Trip.insertMany(trips);
+    console.log('Seed complete.');
+  } catch (err) {
+    console.error('Seed error:', err);
+  } finally {
+    process.exit(0);
+  }
+})();
