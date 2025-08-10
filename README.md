@@ -85,109 +85,57 @@ Key changes:
 <details open>
 <summary><strong>Show / Hide</strong></summary>
 
-- **Dynamic Web Pages:** Key pages (Travel, Meals, Rooms, News, About, Contact, Home) continue to render via Handlebars templates.
-- **Content Management via JSON:** Page content is still read from JSON files; edits to `app_server/data/*.json` update pages without code changes.
-- **Consistent Navigation:** Shared header and footer partials keep menus and branding consistent site-wide.
-- **Clean URL Routing:** Express routes map friendly URLs to controller actions.
-- **Modular Codebase:** Clear separation across controllers, routes, views, and data files.
-
-- **MongoDB (Introduced in M4):** Adds a Trip schema with required fields; `code` and `name` are indexed for faster lookup, and `start` is stored as an ISO date in the `trips` collection.
-- **Centralized DB Connection:** Connection module (`app_server/models/db.js`) targets `mongodb://127.0.0.1/travlr`, supports `DB_HOST`, and includes graceful shutdown and Windows SIGINT handling.
-- **Database Seeding:** Repeatable seed script (`app_server/models/seed.js`) loads `data/trips.json` into MongoDB for local development.
-- **Prepared for Future Integration:** In Module 4 the UI still reads from JSON; controllers will be wired to query MongoDB in a later module.
-- **Git Workflow:** Work isolated on the `module4` branch; changes committed and pushed to GitHub.
+- **RESTful Endpoints**
+  - **GET** **`/api/trips`** — list all trips
+  - **GET** **`/api/trips/:tripCode`** — find one trip by `code`
+- **API-First Structure**
+  - Models/DB under **`app_api/models`**
+  - Controllers under **`app_api/controllers`**
+  - Routes under **`app_api/routes`**
+  - Mounted via **`app.use('/api', apiRouter)`**
+- **Reuses Existing Mongoose Model**
+  - Trip schema registered once as **`"trips"`**
+  - Optional shim **`app_api/models/trips.js`** re-exports the real model (`travlr.js`)
+- **Centralized DB Loader (API side)**
+  - `app_api/models/db.js` connects and loads the model once
+- **Public Integration (Implemented)**
+  - <em>Travel</em> page now fetches `http://localhost:3000/api/trips` server-side and renders the results
+- **Git Workflow**
+  - Work on `module5` branch; commit API and wiring changes
 
 </details>
-
 ---
 
 # Page Previews
 <details>
 <summary><strong>Show / Hide</strong></summary>
 
-## Home 
+## API: /api/trips
+
 <details>
   <summary><strong>Show/Hide Preview</strong></summary>
 
   <div align="center">
-    <img src="public/images/index1.png" alt="Home Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/index2.png" alt="Home Page 2" width="100%" />
+    <img src="public/images/API1.png" alt="/api/trips in browser (JSON list)" width="100%" style="margin-bottom: 10px;" />
+    <img src="public/images/Postman2.png" alt="/api/trips in Postman (JSON list table view)" width="100%" />
   </div>
 
 </details>
 
-## Travel
+## API: /api/trips/:tripCode
 
 <details>
   <summary><strong>Show/Hide Preview</strong></summary>
 
-  <div>
-    <img src="public/images/travel1.png" alt="Travel Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/travel2.png" alt="Travel Page 2" width="100%" />
+  <div align="center">
+    <img src="public/images/API2.png" alt="/api/trips/:tripCode in browser (single JSON object)" width="100%" style="margin-bottom: 10px;" />
+    <img src="public/images/Postman1.png" alt="/api/trips/:tripCode in Postman (single JSON object)" width="100%" />
   </div>
 
 </details>
 
-## Rooms
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-
-  <div>
-    <img src="public/images/rooms1.png" alt="Rooms Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/rooms2.png" alt="Rooms Page 2" width="100%" />
-  </div>
-
 </details>
 
-## Meals
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-
-  <div>
-    <img src="public/images/meals1.png" alt="Meals Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/meals2.png" alt="Meals Page 2" width="100%" />
-  </div>
-
-</details>
-
-## News
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-
- <div>
-    <img src="public/images/news1.png" alt="News Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/news2.png" alt="News Page 2" width="100%" />
-  </div>
-
-</details>
-
-## About
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-
-  <div>
-    <img src="public/images/about1.png" alt="About Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/about2.png" alt="About Page 2" width="100%" />
-  </div>
-
-</details>
-
-## Contact
-
-<details>
-  <summary><strong>Show/Hide Preview</strong></summary>
-
-  <div>
-    <img src="public/images/contact1.png" alt="Contact Page 1" width="100%" style="margin-bottom: 10px;" />
-    <img src="public/images/contact2.png" alt="Contact Page 2" width="100%" />
-  </div>
-
-</details>
-</details>
 
 ---
 
@@ -196,15 +144,13 @@ Key changes:
 <details open>
   <summary><strong>Show / Hide</strong></summary>
 
-- **Node.js** – JavaScript runtime environment used to run the backend server and scripts.
-- **Express.js** – Minimal and flexible Node.js web application framework for building the server and handling routing.
-- **Handlebars (express-handlebars)** – Templating engine for generating dynamic HTML pages using JSON data.
-- **JavaScript (ES6+)** – Core programming language for server logic and dynamic content.
-- **HTML5 & CSS3** – Structure and style for the rendered web pages.
-- **MongoDB** – NoSQL database used to persist trip data in the `trips` collection.
-- **Mongoose** – ODM library used to define the Trip schema and connect Node.js to MongoDB.
-- **JSON** – Used for seeding initial trip data (`data/trips.json`) during development.
-- **Git** – Version control for managing code changes and collaboration.
+- **Node.js** – Backend runtime  
+- **Express.js** – Web framework + Router for RESTful endpoints  
+- **MongoDB** – NoSQL database (collection: `trips`)  
+- **Mongoose** – ODM; model registered as `"trips"`  
+- **Handlebars (express-handlebars)** – Public views (Travel uses API)  
+- **JSON** – Seed/sample data format (`data/trips.json`)  
+- **Git** – Version control / branching (`module5`)
 
 </details>
 
@@ -655,266 +601,28 @@ Click a browser icon below to be taken to the download page for that browser. </
 
 ---
 
-# Installation & Usage
-
-Follow these steps to set up the **Module 4** project locally.  
-You can use either the **Visual Studio (VS) Code method** or the **Command Line method** — both achieve the same result.
-
----
-
-## Method 1 - Visual Studio (VS) Code
-<details>
+## 7. API Client (Postman) – Optional
+<details open>
   <summary><strong>Show / Hide</strong></summary>
 
-### Clone the repository and create the Module 4 branch
-- Launch **Visual Studio Code**.
-- Open the integrated terminal (**View > Terminal** or `Ctrl + \`` on Windows/Linux, `Cmd + \`` on macOS).
-- Navigate to the folder where you want to store the project (update the path as needed):
-  ```bash
-  cd C:\Users\YourName\Documents
-  ```
+Use an API client to test endpoints with headers, params, and pretty JSON.
 
-* Clone the repository:
-
-  ```bash
-  git clone https://github.com/apursley2012/CS465-full-stack-dev-I.git
-  ```
-* Navigate into the `travlr` project folder:
-
-  ```bash
-  cd CS465-full-stack-dev-I/travlr
-  ```
-* Create and switch to the **Module 4** branch:
-
-  ```bash
-  git checkout -b module4
-  ```
-
-### Open the project in VS Code
-
-* In VS Code, go to **File > Open Folder**.
-* Select the `travlr` folder.
-* Ensure your terminal is open and the current working directory is `travlr`.
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Install Mongoose (MongoDB ODM)
-
-```bash
-npm install mongoose --save
-```
-
-### Start MongoDB
-
-* Make sure **MongoDB Community Server** is installed and running locally (`mongodb://127.0.0.1:27017`).
-* If you installed it as a Windows service:
-
-  ```bash
-  net start MongoDB
-  ```
-* Or run the daemon directly (path may vary):
-
-  ```bash
-  mongod
-  ```
-
-### Seed the database (loads `data/trips.json` into MongoDB)
-
-```bash
-node app_server/models/seed.js
-```
-
-You should see output similar to:
-
-```
-Mongoose connected to mongodb://127.0.0.1/travlr
-Database seeding complete
-Mongoose disconnected
-```
-
-### Start the development server
-
-```bash
-npm start
-```
-
-You should see:
-
-```
-> travlr@0.0.0 start
-> node ./bin/www
-
-Listening on port 3000
-```
-
-### View the application
-
-Open your browser and go to:
-
-```
-http://localhost:3000/
-```
-
-* Visit the **Travel** page to confirm trip data is loading from MongoDB:
-
-```
-http://localhost:3000/travel
-```
-
-### Stop the server
-
-Press:
-
-```
-Ctrl + C
-```
-
-in the terminal.
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://www.postman.com/downloads/" target="_blank">
+          <img src="public/images/postman.svg" alt="Postman" width="120" height="120">
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
 
 </details>
 
 ---
 
-## Method 2 - Command Line
-
-<details>
-  <summary><strong>Show / Hide</strong></summary>
-
-### Clone the repository and create the Module 4 branch
-
-* Open **Command Prompt**, **PowerShell**, or **Terminal**.
-* Navigate to where you want to store the project:
-
-  ```bash
-  cd C:\Users\YourName\Documents
-  ```
-* Clone the repository:
-
-  ```bash
-  git clone https://github.com/apursley2012/CS465-full-stack-dev-I.git
-  ```
-* Navigate into the `travlr` project folder:
-
-  ```bash
-  cd CS465-full-stack-dev-I/travlr
-  ```
-* Create and switch to the **Module 4** branch:
-
-  ```bash
-  git checkout -b module4
-  ```
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Install Mongoose
-
-```bash
-npm install mongoose --save
-```
-
-### Start MongoDB
-
-* Ensure MongoDB is running locally (`mongodb://127.0.0.1:27017`):
-
-  ```bash
-  net start MongoDB
-  ```
-
-  or
-
-  ```bash
-  mongod
-  ```
-
-### Seed the database
-
-```bash
-node app_server/models/seed.js
-```
-
-### Start the development server
-
-```bash
-npm start
-```
-
-You should see:
-
-```
-> travlr@0.0.0 start
-> node ./bin/www
-
-Listening on port 3000
-```
-
-### View the application
-
-Go to:
-
-```
-http://localhost:3000/
-```
-
-* Travel page (data from MongoDB):
-
-```
-http://localhost:3000/travel
-```
-
-### Stop the server
-
-Press:
-
-```
-Ctrl + C
-```
-
-</details>
-
----
-
-## Usage
-
-<details>
-  <summary><strong>Show / Hide</strong></summary>
-
-* **Travel data now comes from MongoDB.**
-
-  * The app connects to `mongodb://127.0.0.1/travlr`.
-  * The `trips` collection is created and seeded by running `node app_server/models/seed.js`.
-
-* **Re-seed as needed:**
-
-  * Edit `travlr/data/trips.json`, then run:
-
-    ```bash
-    node app_server/models/seed.js
-    ```
-  * Refresh `http://localhost:3000/travel` to see the updates.
-
-* **Other pages remain templated:**
-
-  * The site continues to use Handlebars layouts and partials; only **Travel** is data-backed by MongoDB in this module.
-
-* **Troubleshooting tips:**
-
-  * If seeding times out, ensure MongoDB is running.
-  * If you see duplicate menus in pages, ensure you’re using the shared `layout.hbs` with `{{> header}}` and `{{> footer}}`, and remove any hard-coded nav in individual views.
-
-* **Stop / Restart the Server:**
-```
-  * Stop: `Ctrl + C`
-  * Restart: `npm start`.
-```
-</details>
 
 
 ---
@@ -924,6 +632,15 @@ Ctrl + C
 <summary><strong>Show / Hide</strong></summary>
 
 ```
+🗂️ app_api/
+ ↳📁 controllers/
+ |  ↳📄 trips.js               
+ ↳📁 models/
+ |  ↳📄 db.js                  
+ |  ↳📄 travlr.js              
+ |  ↳📄 trips.js               
+ ↳📁 routes/
+ |  ↳📄 index.js               
 🗂️ app_server/
  ↳📁 controllers/
  |  ↳📄 index.js
@@ -998,6 +715,7 @@ Ctrl + C
 - Git & GitHub  
 - Visual Studio Code  
 - Free Website Templates
+- Postman
 
 </details>
 
