@@ -1,0 +1,24 @@
+{
+  "title": "Enjoy the Summer with Us!",
+  "intro": [
+    "This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forum.",
+    "Integer magna leo, posuere et dignissim vitae, porttitor at odio. Pellentesque a metus nec magna placerat volutpat. Nunc nisi mi, elementum sit amet aliquet quis, tristique quis nisl."
+  ],
+  "latestBlog": [
+    {
+      "title": "2023 Best Beaches Contest Winners",
+      "url": "/news",
+      "date": "April 02, 2023",
+      "blurb": "Integer magna leo, posuere et dignissim vitae, porttitor at odio. Pellentesque a metus nec magna placerat volutpat. Nunc nisi mi, elementum sit amet..."
+    },
+    {
+      "title": "Top 10 Diving Spots",
+      "url": "/news",
+      "date": "May 29, 2023",
+      "blurb": "Maecenas scelerisque odio quis arcu fringilla malesuada. In libero nulla, fermentum ut pretium ac, pharetra et eros..."
+    }
+  ],
+  "testimonials": [
+    "“In hac habitasse platea dictumst. Integer purus justo, egestas non porta a, tempor id nibh. Suspendisse quis quam eu mauris ullamcorper congue. Pellentesque non nisi ligula. Nam blandit erat et sem laoreet non aliquet sapien ullamcorper. Fusce gravida interdum facilisis. Etiam quis elit mauris, nec vestibulum lorem.” - Juan De La Cruz"
+  ]
+}
