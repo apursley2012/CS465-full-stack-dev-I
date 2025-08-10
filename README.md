@@ -12,7 +12,7 @@
 # Project Overview 
 
 <div align="center">
-  <p align="center"> Module 5 adds a REST API to Travlr Getaways. The Mongoose model from Module 4 is reused, but moved under <code>app_api/models/</code>. New API routes and controllers expose the trips data via <code>GET /api/trips</code> and <code>GET /api/trips/:tripCode</code>. <code>app.js</code> is updated to load the API-side database bootstrap and mount the API at <code>/api</code>. Optionally, the public Travel page can consume this API, but the core deliverable for Module 5 is the working API.
+  <p align="center"> Module 5 adds a RESTful API to Travlr Getaways. The Mongoose model from Module 4 is reused, but moved under <code>app_api/models/</code>. New API routes and controllers expose the trips data via <code>GET /api/trips</code> and <code>GET /api/trips/:tripCode</code>. <code>app.js</code> is updated to load the API-side database bootstrap and mount the API at <code>/api</code>. Optionally, the public Travel page can consume this API, but the core deliverable for Module 5 is the working API.
   </p>
   <a href="#prerequisites"><strong>Quick Start »</strong></a>
     &nbsp;&middot;&nbsp;
@@ -61,12 +61,21 @@
 <details open>
   <summary><strong>Show / Hide</strong></summary>
 	<br>
-<p>Travlr Getaways Module 4 connects the existing MVC/Handlebars app to a real database. Instead of reading trip data from local JSON files, the site now uses MongoDB through Mongoose, which gives us a typed schema, indexed fields, and faster, more reliable data access.
-
-This module adds a `Trip` model (code, name, length, start, resort, perPerson, image, description) and a centralized database connector (`db.js`) that manages the MongoDB connection and graceful shutdown. A small seed script loads the trip records into the `trips` collection so the Travel page can render live data from the database.
-
-On the server side, the Travel controller is updated to query MongoDB and pass the results to the existing Handlebars templates. The front-end structure, partials, and layout remain the same; only the data source changes. This shift lays the groundwork for future modules where we’ll introduce APIs and an admin SPA without rewriting the page templates.
+<p>
+Module 5 delivers a <strong>RESTful API</strong> for trips. The data layer from Module 4 is moved under <code>app_api/models</code> so the API fully owns data access. An Express router mounted at <code>/api</code> exposes:
 </p>
+
+- <code>GET /api/trips</code> — returns all trips (JSON array)  
+- <code>GET /api/trips/:tripCode</code> — returns one trip (JSON object) or 404
+
+<p>
+Key changes:
+</p>
+
+- Move DB bootstrap + model(s) to <code>app_api/models/</code> (model name stays <code>"trips"</code>).
+- Add API controller(s) in <code>app_api/controllers/</code> and routes in <code>app_api/routes/</code>.
+- Update <code>app.js</code> to <code>require('./app_api/models/db')</code> and <code>app.use('/api', require('./app_api/routes'))</code>.
+- (Optional) Public Travel page can render by calling the API; not required for core Module 5.
 </details>
 
 ---
