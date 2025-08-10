@@ -611,19 +611,117 @@ Use an API client to test endpoints with headers, params, and pretty JSON.
   <table>
     <tr>
       <td align="center" valign="middle">
-        <a href="https://www.postman.com/downloads/" target="_blank">
-          <img src="public/images/postman.svg" alt="Postman" width="120" height="120">
+        <a href="https://www.mongodb.com/products/compass" target="_blank">
+          <img src= "https://github.com/apursley2012/CS465-full-stack-dev-I/raw/module4/public/images/mongocompassicon.png" alt="MongoDB Compass" width="120" height="120">
         </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="top">
+        <strong><em><a href="https://www.mongodb.com/products/compass" target="_blank">Download</a></em></strong><br>MongoDB Compass
       </td>
     </tr>
   </table>
 </div>
 
-</details>
+---
+
+## Installation & Usage 
+
+Follow these steps to clone the repo and run **Module 5** locally. You should not need to edit any code.
 
 ---
 
+### Prerequisites
+- **Node.js (LTS)** and **npm** installed.
+- **MongoDB Community Server** running locally on `mongodb://127.0.0.1:27017`.
 
+Start MongoDB (pick one):
+
+    ```bash
+    net start MongoDB
+    # OR (in a separate terminal)
+    mongod
+	```
+
+> If your local MongoDB does not already contain `travlr.trips` data (from Module 4), run the seed script in **Step 3** once. This is not a code change—just a one-time command.
+
+---
+
+### 1) Get the code
+    ```bash
+    git clone https://github.com/apursley2012/CS465-full-stack-dev-I.git
+    cd CS465-full-stack-dev-I
+    git checkout module5
+	```
+
+### 2) Install dependencies
+    ```bash
+    npm install
+	```
+
+### 3) (First run only) Seed the database
+    ```bash
+    node app_server/models/seed.js
+	```
+
+Expected: connects to `mongodb://127.0.0.1/travlr` and inserts trip documents into the `trips` collection.
+
+### 4) Start the app
+    ```bash
+    npm start```
+
+You should see something like:
+
+    ```
+	> node ./bin/www
+    Listening on port 3000
+	```
+
+### 5) Test the RESTful API
+- **List all trips:** `http://localhost:3000/api/trips`  
+- **Single trip by code:** `http://localhost:3000/api/trips/<REAL_TRIP_CODE>`
+
+### 6) Test the Travel page (optional enhancement implemented)
+- `http://localhost:3000/travel`
+
+### 7) Stop the server
+- Press **Ctrl + C** in the terminal.
+
+---
+
+### API Endpoints
+- **GET** `/api/trips` → Returns all trips as JSON.  
+- **GET** `/api/trips/:tripCode` → Returns a single trip by its code (404 if not found).
+
+**Example JSON response:**
+
+    ```json
+    {
+      "code": "GALR20214",
+      "name": "Gale Reef",
+      "length": "4 nights / 5 days",
+      "start": "2021-02-14T08:00:00.000Z",
+      "resort": "Emerald Bay, 3 stars",
+      "perPerson": "799.00",
+      "image": "/images/reef1.jpg",
+      "description": "Gale Reef Sed et augue lorem..."
+    }
+	```
+
+---
+
+### Troubleshooting (no code edits)
+- **MongoDB not running** → Start the service (`net start MongoDB`) or run `mongod`.
+- **Empty API results** → Run the seed script once: `node app_server/models/seed.js`.
+- **404 on `/api/trips`** → Ensure the app is running at `http://localhost:3000` and you’re on the **module5** branch.
+- **500 errors** → Check terminal output for stack traces; most often MongoDB isn’t started.
+
+### Troubleshooting (no code edits)
+- **MongoDB not running** → Start the service (`net start MongoDB`) or run `mongod`.
+- **Empty API results** → Run the seed script once: `node app_server/models/seed.js`.
+- **404 on `/api/trips`** → Ensure the app is running at `http://localhost:3000` and you’re on the **module5** branch.
+- **500 errors** → Check terminal output for stack traces; most often MongoDB isn’t started.
 
 ---
 
