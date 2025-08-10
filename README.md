@@ -2,7 +2,8 @@
 
   <div align="center">
       <h1> Travlr Getaways </h1>
-      <h3><em> Module 5: RESTful API </em></h3>
+      <h3><em> Module 5: REST API (Express + Mongoose) <br> 
+        (/api/trips &amp; /api/trips/:tripCode) </em></h3>
   </div>
 
   <img src="public/images/upscaledlogo.png" alt="Travlr Getaways Logo" width="100%">
@@ -12,11 +13,11 @@
 # Project Overview 
 
 <div align="center">
-  <p align="center"> Module 4 integrates a MongoDB database into the Travlr Getaways application using Mongoose. Instead of reading JSON on every request, trip data is defined by a Mongoose schema and stored in MongoDB. A lightweight seed script loads the existing JSON into the new database. The UI and routing remain the same; this module adds the model layer, database connection, and initial data population to prepare for API and admin features in later modules.
+  <p align="center"> Module 5 adds a REST API to Travlr Getaways. The Mongoose model from Module 4 is reused, but moved under <code>app_api/models/</code>. New API routes and controllers expose the trips data via <code>GET /api/trips</code> and <code>GET /api/trips/:tripCode</code>. <code>app.js</code> is updated to load the API-side database bootstrap and mount the API at <code>/api</code>. Optionally, the public Travel page can consume this API, but the core deliverable for Module 5 is the working API.
   </p>
   <a href="#prerequisites"><strong>Quick Start »</strong></a>
     &nbsp;&middot;&nbsp;
-     <a href="#page-previews"><strong> Page Previews »</strong></a>
+     <a href="#page-previews"><strong> API Previews »</strong></a>
     &nbsp;&middot;&nbsp;
 	<a href="https://github.com/apursley2012/CS465-full-stack-dev-I/issues/new"><strong> Report Issue »</strong></a>
 </p>
@@ -29,13 +30,8 @@
 - [About the Project](#about-the-project)
 - [Features](#features)
 - [Page Previews](#page-previews)
-  - [Home](#home)
-  - [Travel](#travel)
-  - [Rooms](#rooms)
-  - [Meals](#meals)
-  - [News](#news)
-  - [About](#about)
-  - [Contact](#contact)
+  - [API: /api/trips](#api-apitrips)
+  - [API: /api/trips/:tripCode](#api-apitripstripcode)
 - [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
   - [1. Web Browser](#1-web-browser)
@@ -54,6 +50,9 @@
 	- [Github Profile](#github-profile)
  	- [University Email](#university-email)
   	- [Personal Email](#personal-email) 
+
+
+---
 
 
 ---
