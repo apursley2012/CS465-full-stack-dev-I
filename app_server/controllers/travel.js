@@ -1,36 +1,32 @@
-// app_server/controllers/travel.js
-// PUBLIC controller: renders the Travel page by fetching your API.
-
-const VIEW_NAME = 'travel'; // template file is app_server/views/travel.hbs
 const tripsEndpoint = 'http://localhost:3000/api/trips';
-const options = { method: 'GET', headers: { Accept: 'application/json' } };
+const options = {
+method: 'GET',
+headers: {
+'Accept': 'application/json'
+}
+}
+//var fs = require('fs');
+//var trips =
+//JSON.parse(fs.readFileSync('./data/trips.json', 'utf8'));
 
-module.exports.travel = async function (req, res) {
-  fetch(tripsEndpoint, options)
-    .then(r => r.json())
-    .then(json => {
-      if (!Array.isArray(json)) {
-        return res.status(502).render(VIEW_NAME, {
-          title: 'Travlr Getaways',
-          trips: [],
-          message: 'Unexpected API response.'
-        });
-      }
-      if (json.length === 0) {
-        return res.status(200).render(VIEW_NAME, {
-          title: 'Travlr Getaways',
-          trips: [],
-          message: 'No trips available.'
-        });
-      }
-      res.render(VIEW_NAME, { title: 'Travlr Getaways', trips: json });
-    })
-    .catch(err => {
-      console.error(err);
-      res.status(500).render(VIEW_NAME, {
-        title: 'Travlr Getaways',
-        trips: [],
-        message: 'Failed to load trips.'
-      });
-    });
+/* GET travel view */
+const travel = async function(req , res, next) {
+    await fetch(tripsEndpoint, options)
+        .then(res => res.json())
+        .then(json => {
+            let message = null;
+            if(!(json instanceof Array)) {
+                message = json;
+                json = [];
+            }else{
+                if(!json.length) {
+                    message = "No trips exist in our database!";
+                }
+            }
+            res.render('travel', {title: 'Travlr Getaways', trips: json, message});
+        })
+
+    .catch(err => res.status(500).send(e.message));
 };
+
+module.exports = {travel};
