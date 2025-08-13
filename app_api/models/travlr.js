@@ -1,6 +1,7 @@
 // app_api/models/travlr.js
 const mongoose = require('mongoose');
 
+// Define the trip schema
 const tripSchema = new mongoose.Schema(
   {
     code:        { type: String, required: true, index: true },
@@ -15,5 +16,6 @@ const tripSchema = new mongoose.Schema(
   { collection: 'trips' }
 );
 
+const Trip = mongoose.model('trips', tripSchema);
 // Register and export model
-module.exports = mongoose.model('trips', tripSchema);
+module.exports = Trip;
