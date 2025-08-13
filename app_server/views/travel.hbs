@@ -4,32 +4,33 @@
   <meta charset="utf-8" />
   <title>{{title}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="/stylesheets/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-  <header>
-    <h1>Travel</h1>
-  </header>
+	<div id="background">
+		<div id="page">
+			{{> header }}
 
-  {{#if message}}
-    <p>{{message}}</p>
-  {{/if}}
-
-  {{#if trips}}
-    <section class="trips-grid">
-      {{#each trips}}
-        <article class="trip-card">
-          <img src="{{this.image}}" alt="{{this.name}}" class="trip-image" />
-          <h2 class="trip-name">{{this.name}}</h2>
-          <p class="trip-meta">{{this.length}} • Starts {{this.start}}</p>
-          <p class="trip-resort">{{this.resort}}</p>
-          <p class="trip-price">${{this.perPerson}} per person</p>
-          <p class="trip-desc">{{this.description}}</p>
-        </article>
-      {{/each}}
-    </section>
-  {{else}}
-    <p>No trips found.</p>
-  {{/if}}
+	<div id="contents">
+				<div class="box">
+					<div>
+						<div class="body">
+							<h1>Travel</h1>
+							<ul id="sites">
+  {{#each trips}}
+                 <li>
+									<a href="/api/trips/{{this.code}}"><img src="images/{{this.image}}" alt="Img"></a>
+									<h2><a href="/travel">{{this.name}}</a></h2>
+									{{{this.description}}}
+								 </li>
+				{{/each}}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{> footer}}
+	</div>
 </body>
 </html>
