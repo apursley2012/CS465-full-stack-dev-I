@@ -12,12 +12,23 @@ const trips = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 (async () => {
   try {
     // Clear then insert so reseeding is clean
-    await Trip.deleteMany({});
+    await Trip.deleteMany();
+    console.log('Existing records deleted.');
+
+    // Insert seed data
     await Trip.insertMany(trips);
     console.log('Seed complete.');
-  } catch (err) {
-    console.error('Seed error:', err);
-  } finally {
-    process.exit(0);
+ } catch (error) {
+    console.error('Error seeding the database:', error);
   }
-})();
+};
+ // Close the MongoDB connection and exit
+seedDB()
+  .then(async () => {
+    await mongoose.connection.close();
+    process.exit(0);
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
