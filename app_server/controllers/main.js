@@ -1,3 +1,6 @@
-module.exports.index = function(req, res) {
-    res.render('index', { title: 'Travlr Getaways' });
+/* GET Homepage */
+const index = (req , res) => {
+    res.render('index',{title : "Travlr Getaways"});
 };
+
+module.exports = {index};
