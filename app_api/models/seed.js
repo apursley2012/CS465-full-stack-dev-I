@@ -9,7 +9,7 @@ const Trip = require('./travlr');
 const jsonPath = path.join(__dirname, '..', '..', 'data', 'trips.json');
 const trips = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 
-(async () => {
+const seedDB = async () => {
   try {
     // Clear then insert so reseeding is clean
     await Trip.deleteMany();
